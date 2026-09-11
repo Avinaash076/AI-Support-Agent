@@ -1,5 +1,11 @@
+import sys
+import os
 import re
 from typing import Dict, Any, List
+
+# Ensure project root is in sys.path
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 from src.llm_client import LLMClient
