@@ -1,0 +1,58 @@
+# Environment & Secret files
+.env
+.env.*
+!.env.example
+
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python cache & bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Testing & Linting cache
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Data & Datasets (prevents committing large data files like twcs.csv)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+data/external/*
+!data/external/.gitkeep
+data/interim/*
+!data/interim/.gitkeep
+*.csv
+*.parquet
+*.h5
+*.pkl
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Package & Build artifacts
+*.egg-info/
+build/
+dist/
+*.egg
+
+# IDE & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Logs & Models
+*.log
+models/

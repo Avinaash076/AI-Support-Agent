@@ -1,0 +1,60 @@
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+class LLMClient:
+    def __init__(self, provider: str = None):
+        """
+        Supports both Groq (gsk_...) and xAI Grok (xai-...) API keys.
+        Auto-detects based on environment variables or parameters.
+        """
+        self.groq_key = os.getenv("GROQ_API_KEY")
+        self.grok_key = os.getenv("GROK_API_KEY") or os.getenv("XAI_API_KEY")
+        
+        if provider == "grok" or (self.grok_key and self.grok_key.startswith("xai-")):
+            self.provider = "grok"
+            self.api_key = self.grok_key
+        else:
+            self.provider = "groq"
+            self.api_key = self.groq_key
+            
+        if self.provider == "groq":
+            from groq import Groq
+            self.client = Groq(api_key=self.api_key)
+            self.fast_model = "qwen/qwen3.6-27b"
+            self.reasoning_model = "qwen/qwen3.6-27b"
+        else:
+            from openai import OpenAI
+            self.client = OpenAI(
+                api_key=self.api_key,
+                base_url="https://api.xai.com/v1"
+            )
+            self.fast_model = "grok-2-mini"
+            self.reasoning_model = "grok-2"
+
+    def completion(self, prompt: str, system_prompt: str = "You are an expert AI assistant.", use_reasoning_model: bool = False, max_tokens: int = 500) -> str:
+        model = self.reasoning_model if use_reasoning_model else self.fast_model
+        
+        messages = [
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": prompt}
+        ]
+        
+        response = self.client.chat.completions.create(
+            model=model,
+            messages=messages,
+            max_tokens=max_tokens,
+            temperature=0.2
+        )
+        content = response.choices[0].message.content
+        # Strip thinking tags if present (e.g. from qwen)
+        if "<think>" in content and "</think>" in content:
+            content = content.split("</think>")[-1].strip()
+        return content
+
+if __name__ == "__main__":
+    client = LLMClient()
+    print(f"Initialized LLMClient (Provider: {client.provider}, Model: {client.fast_model})")
+    res = client.completion("Hello! Confirm LLM pipeline is ready.")
+    print("Test Output:", res)
