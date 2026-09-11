@@ -79,7 +79,7 @@ STRICT GROUNDING RULES:
 Draft Reply:
 """
         
-        drafted_reply = self.llm.completion(prompt, use_reasoning_model=False, max_tokens=200)
+        drafted_reply = self.llm.completion(prompt, use_reasoning_model=False, max_tokens=1000)
         
         return {
             "query": query,
