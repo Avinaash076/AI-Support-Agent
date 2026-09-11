@@ -1,0 +1,8 @@
+python-dotenv
+groq
+openai
+pandas
+numpy
+scikit-learn
+kagglehub
+streamlit>=1.40,<2

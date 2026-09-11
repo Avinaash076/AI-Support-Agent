@@ -1,8 +1,9 @@
 import os
 import pandas as pd
 
-RAW_PATH = os.path.join("data", "raw", "twcs.csv")
-PROCESSED_DIR = os.path.join("data", "processed")
+PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+RAW_PATH = os.path.join(PROJECT_ROOT, "data", "raw", "twcs.csv")
+PROCESSED_DIR = os.path.join(PROJECT_ROOT, "data", "processed")
 
 def filter_brand_conversations(brand_handle: str = "AmazonHelp", sample_size: int = 50000):
     os.makedirs(PROCESSED_DIR, exist_ok=True)
@@ -31,7 +32,7 @@ def filter_brand_conversations(brand_handle: str = "AmazonHelp", sample_size: in
         ids = [x.strip() for x in str(response_str).split(",")]
         return any(rid in brand_response_ids for rid in ids)
     
-    inbound_for_brand = inbound_tweets[inbound_tweets["response_tweet_id"].apply(receives_brand_response)]
+    inbound_for_brand = inbound_tweets[inbound_tweets["response_tweet_id"].apply(receives_brand_response)].copy()
     print(f"Found {len(inbound_for_brand)} incoming customer tweets answered by @{brand_handle}.")
     
     # Join inbound customer query with brand response

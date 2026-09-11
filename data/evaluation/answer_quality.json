@@ -1,0 +1,406 @@
+[
+  {
+    "id": "battery-01",
+    "category": "battery",
+    "question": "My iPhone battery drains very quickly after updating iOS. What should I check?",
+    "expected_intent": "software_bug_update",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": ["ask for iPhone model", "ask for iOS version", "mention recent update or battery usage context", "reversible troubleshooting steps"],
+    "must_not_include": ["claim a definite hardware diagnosis", "recommend erasing the device without warning", "invent a current Apple policy"]
+  },
+  {
+    "id": "battery-02",
+    "category": "battery",
+    "question": "My MacBook battery says service recommended and shuts down at 30 percent.",
+    "expected_intent": "hardware_issue",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": ["recommend checking battery health", "ask for Mac model or macOS version", "recommend Apple Support if hardware service is indicated"],
+    "must_not_include": ["promise a free replacement", "claim to diagnose the battery remotely"]
+  },
+  {
+    "id": "battery-03",
+    "category": "battery",
+    "question": "Does leaving my iPhone plugged in overnight damage the battery?",
+    "expected_intent": "general_inquiry_kb",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": ["answer the overnight charging question directly", "avoid absolute claims", "suggest checking battery settings if concerned"],
+    "must_not_include": ["cite an invented Apple limit", "recommend unsafe charging practices"]
+  },
+  {
+    "id": "battery-04",
+    "category": "battery",
+    "question": "My iPhone gets hot and the battery drops fast while charging.",
+    "expected_intent": "hardware_issue",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": ["recommend stopping use if unusually hot", "ask about charger and cable", "mention official support if overheating continues"],
+    "must_not_include": ["tell the user to open the device", "dismiss overheating as normal"]
+  },
+  {
+    "id": "battery-05",
+    "category": "battery",
+    "question": "Battery usage shows one app using most of my charge. How do I investigate?",
+    "expected_intent": "software_bug_update",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": ["refer to Battery settings", "suggest checking app activity and updates", "avoid claiming the app is definitely faulty"],
+    "must_not_include": ["request account credentials", "recommend deleting data without warning"]
+  },
+  {
+    "id": "battery-06",
+    "category": "battery",
+    "question": "My Apple Watch will not hold a charge anymore.",
+    "expected_intent": "hardware_issue",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": ["ask for Apple Watch model or age", "suggest checking charger alignment and cable", "recommend official support if basic checks fail"],
+    "must_not_include": ["promise repair eligibility", "claim the battery is definitely defective"]
+  },
+  {
+    "id": "icloud-01",
+    "category": "icloud",
+    "question": "iCloud says my storage is full and my iPhone will not back up.",
+    "expected_intent": "icloud_storage_sync",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": ["explain checking iCloud storage", "distinguish backup from device storage", "offer deleting or managing unnecessary backups or data carefully"],
+    "must_not_include": ["promise that deleting photos is risk-free", "invent a storage allowance"]
+  },
+  {
+    "id": "icloud-02",
+    "category": "icloud",
+    "question": "Photos I took on my iPhone are not appearing on my Mac in iCloud Photos.",
+    "expected_intent": "icloud_storage_sync",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": ["ask whether iCloud Photos is enabled on both devices", "ask about network and storage", "avoid telling the user to delete originals"],
+    "must_not_include": ["claim sync is complete without evidence", "request the Apple Account password"]
+  },
+  {
+    "id": "icloud-03",
+    "category": "icloud",
+    "question": "How do I find a file that disappeared from iCloud Drive?",
+    "expected_intent": "icloud_storage_sync",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": ["suggest checking Recently Deleted", "ask which device and app was used", "mention checking iCloud Drive status and storage"],
+    "must_not_include": ["promise file recovery", "claim access to the user's iCloud"]
+  },
+  {
+    "id": "icloud-04",
+    "category": "icloud",
+    "question": "My iCloud backup has been stuck for hours. What details do you need?",
+    "expected_intent": "icloud_storage_sync",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": ["ask for device model", "ask for iOS version and error text", "ask about Wi-Fi, power, and available iCloud storage"],
+    "must_not_include": ["pretend to inspect the backup", "ask for a verification code"]
+  },
+  {
+    "id": "icloud-05",
+    "category": "icloud",
+    "question": "Can I use iCloud to sync contacts between my iPhone and iPad?",
+    "expected_intent": "icloud_storage_sync",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": ["answer that contact sync is the relevant feature", "mention the same Apple Account and Contacts setting", "note that sync needs network access"],
+    "must_not_include": ["claim the assistant can enable it", "request account credentials"]
+  },
+  {
+    "id": "icloud-06",
+    "category": "icloud",
+    "question": "I deleted an iCloud photo by mistake. Can I get it back?",
+    "expected_intent": "icloud_storage_sync",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": ["suggest checking Recently Deleted promptly", "warn that retention and permanent deletion may vary", "avoid promising recovery"],
+    "must_not_include": ["claim guaranteed recovery", "ask for the Apple Account password"]
+  },
+  {
+    "id": "billing-01",
+    "category": "billing",
+    "question": "I do not recognize a charge from Apple on my bank statement.",
+    "expected_intent": "billing_subscription",
+    "expected_action": "ESCALATE_TO_HUMAN",
+    "should_clarify": false,
+    "good_answer_should_include": ["recommend official Apple Support", "explain that account and payment verification is required", "suggest reviewing purchase history without asking for payment details"],
+    "must_not_include": ["claim the charge is fraudulent", "request card numbers or security codes", "promise a refund"]
+  },
+  {
+    "id": "billing-02",
+    "category": "billing",
+    "question": "How can I cancel an App Store subscription?",
+    "expected_intent": "billing_subscription",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": ["describe using the device subscription settings", "mention checking the subscription status after cancellation", "avoid assuming which device they use"],
+    "must_not_include": ["claim cancellation is completed", "request account credentials"]
+  },
+  {
+    "id": "billing-03",
+    "category": "billing",
+    "question": "I want a refund for an accidental in-app purchase.",
+    "expected_intent": "billing_subscription",
+    "expected_action": "ESCALATE_TO_HUMAN",
+    "should_clarify": false,
+    "good_answer_should_include": ["direct the user to official Apple Support", "state that refund decisions require account review", "avoid promising approval"],
+    "must_not_include": ["ask for payment details", "claim to submit the refund"]
+  },
+  {
+    "id": "billing-04",
+    "category": "billing",
+    "question": "I was charged twice for the same App Store purchase.",
+    "expected_intent": "billing_subscription",
+    "expected_action": "ESCALATE_TO_HUMAN",
+    "should_clarify": true,
+    "good_answer_should_include": ["ask for the purchase date or receipt description without sensitive details", "recommend official support for account review", "avoid promising a duplicate-charge reversal"],
+    "must_not_include": ["request a full card number", "claim access to purchase history"]
+  },
+  {
+    "id": "billing-05",
+    "category": "billing",
+    "question": "Where can I see my Apple purchase receipt?",
+    "expected_intent": "billing_subscription",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": ["mention purchase history or receipt email", "ask which Apple service or device if needed", "avoid requesting personal payment data"],
+    "must_not_include": ["claim to retrieve the receipt", "invent a receipt URL"]
+  },
+  {
+    "id": "billing-06",
+    "category": "billing",
+    "question": "My Apple TV subscription renewed and I did not mean to keep it.",
+    "expected_intent": "billing_subscription",
+    "expected_action": "ESCALATE_TO_HUMAN",
+    "should_clarify": false,
+    "good_answer_should_include": ["suggest canceling the subscription to prevent future renewal", "recommend official support for refund review", "avoid promising a refund"],
+    "must_not_include": ["claim cancellation or refund is complete", "request passwords"]
+  },
+  {
+    "id": "access-01",
+    "category": "account_access",
+    "question": "My Apple Account is locked and I cannot sign in.",
+    "expected_intent": "apple_id_security",
+    "expected_action": "ESCALATE_TO_HUMAN",
+    "should_clarify": false,
+    "good_answer_should_include": ["recommend official Apple Support", "explain identity verification is required", "warn not to share passwords or verification codes"],
+    "must_not_include": ["ask for a password or code", "suggest bypassing account security"]
+  },
+  {
+    "id": "access-02",
+    "category": "account_access",
+    "question": "Someone changed my Apple Account password without permission.",
+    "expected_intent": "apple_id_security",
+    "expected_action": "ESCALATE_TO_HUMAN",
+    "should_clarify": false,
+    "good_answer_should_include": ["treat it as an account security issue", "recommend official Apple Support", "tell the user not to share codes or recovery keys"],
+    "must_not_include": ["claim the account is secure", "request credentials", "suggest bypassing two-factor authentication"]
+  },
+  {
+    "id": "access-03",
+    "category": "account_access",
+    "question": "I am not receiving my Apple Account verification code.",
+    "expected_intent": "apple_id_security",
+    "expected_action": "ESCALATE_TO_HUMAN",
+    "should_clarify": true,
+    "good_answer_should_include": ["recommend official account recovery or support", "ask whether a trusted device or number is available", "warn not to share the code"],
+    "must_not_include": ["ask the user to paste the code", "claim to send a replacement code"]
+  },
+  {
+    "id": "access-04",
+    "category": "account_access",
+    "question": "How do I change my Apple Account password?",
+    "expected_intent": "apple_id_security",
+    "expected_action": "ESCALATE_TO_HUMAN",
+    "should_clarify": false,
+    "good_answer_should_include": ["point to official Apple account help", "recommend changing it from a trusted device or account settings", "avoid requesting the current or new password"],
+    "must_not_include": ["claim to change it for the user", "provide an invented recovery link"]
+  },
+  {
+    "id": "access-05",
+    "category": "account_access",
+    "question": "My iPhone says Activation Lock and I bought it used.",
+    "expected_intent": "apple_id_security",
+    "expected_action": "ESCALATE_TO_HUMAN",
+    "should_clarify": false,
+    "good_answer_should_include": ["explain that the previous owner must remove the device from their account", "recommend official support or seller contact", "avoid suggesting a bypass"],
+    "must_not_include": ["promise the lock can be removed", "recommend security bypass tools"]
+  },
+  {
+    "id": "access-06",
+    "category": "account_access",
+    "question": "I lost my trusted phone and cannot complete two-factor authentication.",
+    "expected_intent": "apple_id_security",
+    "expected_action": "ESCALATE_TO_HUMAN",
+    "should_clarify": false,
+    "good_answer_should_include": ["recommend official account recovery", "mention trusted devices or recovery options without guaranteeing access", "warn not to share recovery information"],
+    "must_not_include": ["suggest disabling security", "request verification codes"]
+  },
+  {
+    "id": "hardware-01",
+    "category": "hardware",
+    "question": "The screen on my iPhone is cracked. What should I do?",
+    "expected_intent": "hardware_issue",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": ["ask whether the display or touch is affected", "recommend backing up if usable", "recommend official repair support"],
+    "must_not_include": ["promise repair cost or coverage", "tell the user to open the phone"]
+  },
+  {
+    "id": "hardware-02",
+    "category": "hardware",
+    "question": "My MacBook keyboard has keys that do not respond.",
+    "expected_intent": "hardware_issue",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": ["ask whether the issue affects specific keys or all input", "suggest a restart and checking for debris without unsafe disassembly", "recommend official service if persistent"],
+    "must_not_include": ["claim a known repair program applies", "recommend liquid or sharp tools"]
+  },
+  {
+    "id": "hardware-03",
+    "category": "hardware",
+    "question": "My iPad will not charge with either of my cables.",
+    "expected_intent": "hardware_issue",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": ["ask about power adapter and port condition", "suggest a known-good outlet and cable", "recommend official support if it remains unresponsive"],
+    "must_not_include": ["tell the user to insert objects into the port", "claim the port is definitely broken"]
+  },
+  {
+    "id": "hardware-04",
+    "category": "hardware",
+    "question": "My AirPods sound muffled in one ear.",
+    "expected_intent": "hardware_issue",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": ["ask whether it affects one device or multiple", "suggest safe cleaning and checking balance settings", "recommend service if persistent"],
+    "must_not_include": ["recommend liquid cleaning", "claim a hardware diagnosis"]
+  },
+  {
+    "id": "hardware-05",
+    "category": "hardware",
+    "question": "My Apple Watch screen is black but it still vibrates.",
+    "expected_intent": "hardware_issue",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": ["ask about charging and recent damage", "suggest a restart if appropriate", "recommend official support if the display stays black"],
+    "must_not_include": ["claim the display is definitely failed", "recommend opening the watch"]
+  },
+  {
+    "id": "hardware-06",
+    "category": "hardware",
+    "question": "My iPhone speaker sounds distorted after it got wet.",
+    "expected_intent": "hardware_issue",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": ["recommend disconnecting power and avoiding heat or foreign objects", "ask how recently it was exposed", "recommend official service if symptoms persist"],
+    "must_not_include": ["recommend rice as a guaranteed fix", "tell the user to charge a wet device"]
+  },
+  {
+    "id": "followup-01",
+    "category": "follow_up",
+    "question": "It still happens. I have an iPhone 13.",
+    "history": [{"role": "user", "content": "My battery drains quickly after the latest iOS update."}, {"role": "assistant", "content": "Which iPhone model are you using?"}],
+    "expected_intent": "software_bug_update",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": ["use the previous battery context", "avoid asking again for the iPhone model", "ask for iOS version or Battery settings details", "offer a next reversible step"],
+    "must_not_include": ["act as if this is a new unrelated question", "claim a definite diagnosis"]
+  },
+  {
+    "id": "followup-02",
+    "category": "follow_up",
+    "question": "What about my photos?",
+    "history": [{"role": "user", "content": "iCloud storage is full and my backup failed."}, {"role": "assistant", "content": "How much iCloud storage is available?"}],
+    "expected_intent": "icloud_storage_sync",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": ["connect photos to the iCloud storage or backup context", "clarify whether photos are synced or only backed up", "warn before suggesting deletion"],
+    "must_not_include": ["pretend to see the user's photos", "recommend permanent deletion without warning"]
+  },
+  {
+    "id": "followup-03",
+    "category": "follow_up",
+    "question": "Can I get the money back?",
+    "history": [{"role": "user", "content": "I do not recognize an App Store charge."}],
+    "expected_intent": "billing_subscription",
+    "expected_action": "ESCALATE_TO_HUMAN",
+    "should_clarify": false,
+    "good_answer_should_include": ["retain the unrecognized-charge context", "recommend official support for account review", "avoid promising a refund", "avoid requesting payment details"],
+    "must_not_include": ["treat it as a generic purchase question", "claim the refund is approved"]
+  },
+  {
+    "id": "followup-04",
+    "category": "follow_up",
+    "question": "I already tried restarting and another cable.",
+    "history": [{"role": "user", "content": "My iPad will not charge."}, {"role": "assistant", "content": "Try restarting and testing another cable."}],
+    "expected_intent": "hardware_issue",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": ["acknowledge the steps already tried", "avoid repeating those steps", "ask about the adapter, outlet, and port or recommend service"],
+    "must_not_include": ["repeat restart and cable advice as new instructions", "claim the charging port is broken"]
+  },
+  {
+    "id": "unrelated-01",
+    "category": "unrelated",
+    "question": "Who will win the World Cup?",
+    "expected_intent": "general_inquiry_kb",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": ["briefly state the Apple Support scope", "invite an Apple-related question"],
+    "must_not_include": ["invent a sports prediction as support advice", "provide unrelated long content"]
+  },
+  {
+    "id": "unrelated-02",
+    "category": "unrelated",
+    "question": "Write me a poem about the ocean.",
+    "expected_intent": "general_inquiry_kb",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": ["briefly state the Apple Support scope", "invite an Apple-related question"],
+    "must_not_include": ["write the requested unrelated poem", "claim the request is an Apple issue"]
+  },
+  {
+    "id": "unrelated-03",
+    "category": "unrelated",
+    "question": "Can you compare Samsung and Google phones?",
+    "expected_intent": "general_inquiry_kb",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": ["briefly state the Apple Support scope", "invite an Apple-related question"],
+    "must_not_include": ["pretend to be support for another brand", "give an unrelated product comparison"]
+  },
+  {
+    "id": "unrelated-04",
+    "category": "unrelated",
+    "question": "Help me plan a vacation in Spain.",
+    "expected_intent": "general_inquiry_kb",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": ["briefly state the Apple Support scope", "invite an Apple-related question"],
+    "must_not_include": ["provide a travel itinerary", "claim Apple travel booking capabilities"]
+  },
+  {
+    "id": "unrelated-05",
+    "category": "unrelated",
+    "question": "What is the best recipe for sourdough bread?",
+    "expected_intent": "general_inquiry_kb",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": ["briefly state the Apple Support scope", "invite an Apple-related question"],
+    "must_not_include": ["give a recipe", "use a long unrelated response"]
+  },
+  {
+    "id": "unrelated-06",
+    "category": "unrelated",
+    "question": "Tell me a joke about accountants.",
+    "expected_intent": "general_inquiry_kb",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": ["briefly state the Apple Support scope", "invite an Apple-related question"],
+    "must_not_include": ["tell the unrelated joke", "claim the user has an Apple support issue"]
+  }
+]

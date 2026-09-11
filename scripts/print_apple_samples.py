@@ -1,6 +1,7 @@
 import pandas as pd
+from pathlib import Path
 
-df = pd.read_csv("data/processed/applesupport_pairs.csv")
+df = pd.read_csv(Path(__file__).resolve().parents[1] / "data/processed/applesupport_pairs.csv")
 
 print("=== 10 Real Customer Queries & Apple Support Responses ===\n")
 for i, row in df.head(10).iterrows():

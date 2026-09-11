@@ -93,7 +93,7 @@ Output your answer in EXACTLY this format:
 INTENT: <one_of_the_keys_above>
 REASON: <brief_one_sentence_reason>
 """
-        raw_response = self.client.completion(prompt, use_reasoning_model=False, max_tokens=150)
+        raw_response = self.client.completion(prompt, use_reasoning_model=False, max_tokens=1000)
         
         intent = "general_inquiry_kb"
         reason = "Default fallback classification."

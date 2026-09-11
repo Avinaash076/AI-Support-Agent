@@ -8,25 +8,35 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")
 from src.intent_classifier import LLMIntentClassifier, KeywordBaselineClassifier
 from src.reply_generator import GroundedReplyGenerator
 from src.escalation_engine import EscalationEngine
+from src.llm_client import LLMClient
 
 class SupportAgentPipeline:
     """Full End-to-End AI Support Agent Pipeline for Apple Support"""
     def __init__(self):
         print("Initializing AI Support Agent Pipeline for @AppleSupport...")
-        self.intent_clf = LLMIntentClassifier()
+        client = LLMClient()
+        self.intent_clf = LLMIntentClassifier(llm_client=client)
         self.kw_clf = KeywordBaselineClassifier()
-        self.reply_gen = GroundedReplyGenerator()
-        self.escalation_eng = EscalationEngine()
+        self.reply_gen = GroundedReplyGenerator(llm_client=client)
+        self.escalation_eng = EscalationEngine(llm_client=client)
         print("Pipeline initialized successfully!\n")
 
-    def process_query(self, query: str) -> Dict[str, Any]:
+    def process_query(self, query: str, history=None) -> Dict[str, Any]:
+        query = query.strip()
+        if not query or len(query) > 4000:
+            raise ValueError("Enter a question between 1 and 4,000 characters.")
+        history = (history or [])[-6:]
+        # Use recent user turns for short follow-ups, without indexing assistant guesses.
+        previous = [m["content"][:2000] for m in history if m.get("role") == "user"]
+        contextual_query = "\n".join(previous[-2:] + [query]) if len(query.split()) < 12 else query
         # Step 1: Intent Classification
-        intent_res = self.intent_clf.predict(query)
+        intent_res = self.intent_clf.predict(contextual_query)
         intent = intent_res["intent"]
         intent_reason = intent_res["reason"]
 
         # Step 2: Grounded Reply Generation via RAG
-        rag_res = self.reply_gen.generate(query, intent=intent)
+        rag_res = self.reply_gen.generate(query, intent=intent, history=history,
+                                          retrieval_query=contextual_query)
         drafted_reply = rag_res["drafted_reply"]
         retrieved_docs = rag_res["retrieved_context"]
         top_similarity = retrieved_docs[0]["similarity_score"] if retrieved_docs else 0.0
