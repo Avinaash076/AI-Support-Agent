@@ -32,6 +32,11 @@ class EscalationEngine:
             should_escalate = True
             reasons.append("Customer sentiment indicates high frustration or legal/escalation risk.")
 
+        # Rule 4: Refund requests
+        if "refund" in query.lower() or "refund" in drafted_reply.lower():
+            should_escalate = True
+            reasons.append("Refund requests require human account review and cannot be auto-approved.")
+
         action = "ESCALATE_TO_HUMAN" if should_escalate else "AUTO_HANDLE"
         primary_reason = " | ".join(reasons) if reasons else "High retrieval confidence and standard resolution protocol."
 
