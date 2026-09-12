@@ -6,8 +6,17 @@
     "expected_intent": "software_bug_update",
     "expected_action": "AUTO_HANDLE",
     "should_clarify": true,
-    "good_answer_should_include": ["ask for iPhone model", "ask for iOS version", "mention recent update or battery usage context", "reversible troubleshooting steps"],
-    "must_not_include": ["claim a definite hardware diagnosis", "recommend erasing the device without warning", "invent a current Apple policy"]
+    "good_answer_should_include": [
+      "ask for iPhone model",
+      "ask for iOS version",
+      "mention recent update or battery usage context",
+      "reversible troubleshooting steps"
+    ],
+    "must_not_include": [
+      "claim a definite hardware diagnosis",
+      "recommend erasing the device without warning",
+      "invent a current Apple policy"
+    ]
   },
   {
     "id": "battery-02",
@@ -16,8 +25,15 @@
     "expected_intent": "hardware_issue",
     "expected_action": "AUTO_HANDLE",
     "should_clarify": true,
-    "good_answer_should_include": ["recommend checking battery health", "ask for Mac model or macOS version", "recommend Apple Support if hardware service is indicated"],
-    "must_not_include": ["promise a free replacement", "claim to diagnose the battery remotely"]
+    "good_answer_should_include": [
+      "recommend checking battery health",
+      "ask for Mac model or macOS version",
+      "recommend Apple Support if hardware service is indicated"
+    ],
+    "must_not_include": [
+      "promise a free replacement",
+      "claim to diagnose the battery remotely"
+    ]
   },
   {
     "id": "battery-03",
@@ -26,8 +42,15 @@
     "expected_intent": "general_inquiry_kb",
     "expected_action": "AUTO_HANDLE",
     "should_clarify": false,
-    "good_answer_should_include": ["answer the overnight charging question directly", "avoid absolute claims", "suggest checking battery settings if concerned"],
-    "must_not_include": ["cite an invented Apple limit", "recommend unsafe charging practices"]
+    "good_answer_should_include": [
+      "answer the overnight charging question directly",
+      "avoid absolute claims",
+      "suggest checking battery settings if concerned"
+    ],
+    "must_not_include": [
+      "cite an invented Apple limit",
+      "recommend unsafe charging practices"
+    ]
   },
   {
     "id": "battery-04",
@@ -36,8 +59,15 @@
     "expected_intent": "hardware_issue",
     "expected_action": "AUTO_HANDLE",
     "should_clarify": true,
-    "good_answer_should_include": ["recommend stopping use if unusually hot", "ask about charger and cable", "mention official support if overheating continues"],
-    "must_not_include": ["tell the user to open the device", "dismiss overheating as normal"]
+    "good_answer_should_include": [
+      "recommend stopping use if unusually hot",
+      "ask about charger and cable",
+      "mention official support if overheating continues"
+    ],
+    "must_not_include": [
+      "tell the user to open the device",
+      "dismiss overheating as normal"
+    ]
   },
   {
     "id": "battery-05",
@@ -46,8 +76,15 @@
     "expected_intent": "software_bug_update",
     "expected_action": "AUTO_HANDLE",
     "should_clarify": false,
-    "good_answer_should_include": ["refer to Battery settings", "suggest checking app activity and updates", "avoid claiming the app is definitely faulty"],
-    "must_not_include": ["request account credentials", "recommend deleting data without warning"]
+    "good_answer_should_include": [
+      "refer to Battery settings",
+      "suggest checking app activity and updates",
+      "avoid claiming the app is definitely faulty"
+    ],
+    "must_not_include": [
+      "request account credentials",
+      "recommend deleting data without warning"
+    ]
   },
   {
     "id": "battery-06",
@@ -56,8 +93,15 @@
     "expected_intent": "hardware_issue",
     "expected_action": "AUTO_HANDLE",
     "should_clarify": true,
-    "good_answer_should_include": ["ask for Apple Watch model or age", "suggest checking charger alignment and cable", "recommend official support if basic checks fail"],
-    "must_not_include": ["promise repair eligibility", "claim the battery is definitely defective"]
+    "good_answer_should_include": [
+      "ask for Apple Watch model or age",
+      "suggest checking charger alignment and cable",
+      "recommend official support if basic checks fail"
+    ],
+    "must_not_include": [
+      "promise repair eligibility",
+      "claim the battery is definitely defective"
+    ]
   },
   {
     "id": "icloud-01",
@@ -66,8 +110,15 @@
     "expected_intent": "icloud_storage_sync",
     "expected_action": "AUTO_HANDLE",
     "should_clarify": false,
-    "good_answer_should_include": ["explain checking iCloud storage", "distinguish backup from device storage", "offer deleting or managing unnecessary backups or data carefully"],
-    "must_not_include": ["promise that deleting photos is risk-free", "invent a storage allowance"]
+    "good_answer_should_include": [
+      "explain checking iCloud storage",
+      "distinguish backup from device storage",
+      "offer deleting or managing unnecessary backups or data carefully"
+    ],
+    "must_not_include": [
+      "promise that deleting photos is risk-free",
+      "invent a storage allowance"
+    ]
   },
   {
     "id": "icloud-02",
@@ -76,8 +127,15 @@
     "expected_intent": "icloud_storage_sync",
     "expected_action": "AUTO_HANDLE",
     "should_clarify": true,
-    "good_answer_should_include": ["ask whether iCloud Photos is enabled on both devices", "ask about network and storage", "avoid telling the user to delete originals"],
-    "must_not_include": ["claim sync is complete without evidence", "request the Apple Account password"]
+    "good_answer_should_include": [
+      "ask whether iCloud Photos is enabled on both devices",
+      "ask about network and storage",
+      "avoid telling the user to delete originals"
+    ],
+    "must_not_include": [
+      "claim sync is complete without evidence",
+      "request the Apple Account password"
+    ]
   },
   {
     "id": "icloud-03",
@@ -86,8 +144,15 @@
     "expected_intent": "icloud_storage_sync",
     "expected_action": "AUTO_HANDLE",
     "should_clarify": true,
-    "good_answer_should_include": ["suggest checking Recently Deleted", "ask which device and app was used", "mention checking iCloud Drive status and storage"],
-    "must_not_include": ["promise file recovery", "claim access to the user's iCloud"]
+    "good_answer_should_include": [
+      "suggest checking Recently Deleted",
+      "ask which device and app was used",
+      "mention checking iCloud Drive status and storage"
+    ],
+    "must_not_include": [
+      "promise file recovery",
+      "claim access to the user's iCloud"
+    ]
   },
   {
     "id": "icloud-04",
@@ -96,8 +161,15 @@
     "expected_intent": "icloud_storage_sync",
     "expected_action": "AUTO_HANDLE",
     "should_clarify": true,
-    "good_answer_should_include": ["ask for device model", "ask for iOS version and error text", "ask about Wi-Fi, power, and available iCloud storage"],
-    "must_not_include": ["pretend to inspect the backup", "ask for a verification code"]
+    "good_answer_should_include": [
+      "ask for device model",
+      "ask for iOS version and error text",
+      "ask about Wi-Fi, power, and available iCloud storage"
+    ],
+    "must_not_include": [
+      "pretend to inspect the backup",
+      "ask for a verification code"
+    ]
   },
   {
     "id": "icloud-05",
@@ -106,8 +178,15 @@
     "expected_intent": "icloud_storage_sync",
     "expected_action": "AUTO_HANDLE",
     "should_clarify": false,
-    "good_answer_should_include": ["answer that contact sync is the relevant feature", "mention the same Apple Account and Contacts setting", "note that sync needs network access"],
-    "must_not_include": ["claim the assistant can enable it", "request account credentials"]
+    "good_answer_should_include": [
+      "answer that contact sync is the relevant feature",
+      "mention the same Apple Account and Contacts setting",
+      "note that sync needs network access"
+    ],
+    "must_not_include": [
+      "claim the assistant can enable it",
+      "request account credentials"
+    ]
   },
   {
     "id": "icloud-06",
@@ -116,8 +195,15 @@
     "expected_intent": "icloud_storage_sync",
     "expected_action": "AUTO_HANDLE",
     "should_clarify": false,
-    "good_answer_should_include": ["suggest checking Recently Deleted promptly", "warn that retention and permanent deletion may vary", "avoid promising recovery"],
-    "must_not_include": ["claim guaranteed recovery", "ask for the Apple Account password"]
+    "good_answer_should_include": [
+      "suggest checking Recently Deleted promptly",
+      "warn that retention and permanent deletion may vary",
+      "avoid promising recovery"
+    ],
+    "must_not_include": [
+      "claim guaranteed recovery",
+      "ask for the Apple Account password"
+    ]
   },
   {
     "id": "billing-01",
@@ -126,8 +212,16 @@
     "expected_intent": "billing_subscription",
     "expected_action": "ESCALATE_TO_HUMAN",
     "should_clarify": false,
-    "good_answer_should_include": ["recommend official Apple Support", "explain that account and payment verification is required", "suggest reviewing purchase history without asking for payment details"],
-    "must_not_include": ["claim the charge is fraudulent", "request card numbers or security codes", "promise a refund"]
+    "good_answer_should_include": [
+      "recommend official Apple Support",
+      "explain that account and payment verification is required",
+      "suggest reviewing purchase history without asking for payment details"
+    ],
+    "must_not_include": [
+      "claim the charge is fraudulent",
+      "request card numbers or security codes",
+      "promise a refund"
+    ]
   },
   {
     "id": "billing-02",
@@ -136,8 +230,15 @@
     "expected_intent": "billing_subscription",
     "expected_action": "AUTO_HANDLE",
     "should_clarify": false,
-    "good_answer_should_include": ["describe using the device subscription settings", "mention checking the subscription status after cancellation", "avoid assuming which device they use"],
-    "must_not_include": ["claim cancellation is completed", "request account credentials"]
+    "good_answer_should_include": [
+      "describe using the device subscription settings",
+      "mention checking the subscription status after cancellation",
+      "avoid assuming which device they use"
+    ],
+    "must_not_include": [
+      "claim cancellation is completed",
+      "request account credentials"
+    ]
   },
   {
     "id": "billing-03",
@@ -146,8 +247,15 @@
     "expected_intent": "billing_subscription",
     "expected_action": "ESCALATE_TO_HUMAN",
     "should_clarify": false,
-    "good_answer_should_include": ["direct the user to official Apple Support", "state that refund decisions require account review", "avoid promising approval"],
-    "must_not_include": ["ask for payment details", "claim to submit the refund"]
+    "good_answer_should_include": [
+      "direct the user to official Apple Support",
+      "state that refund decisions require account review",
+      "avoid promising approval"
+    ],
+    "must_not_include": [
+      "ask for payment details",
+      "claim to submit the refund"
+    ]
   },
   {
     "id": "billing-04",
@@ -156,8 +264,15 @@
     "expected_intent": "billing_subscription",
     "expected_action": "ESCALATE_TO_HUMAN",
     "should_clarify": true,
-    "good_answer_should_include": ["ask for the purchase date or receipt description without sensitive details", "recommend official support for account review", "avoid promising a duplicate-charge reversal"],
-    "must_not_include": ["request a full card number", "claim access to purchase history"]
+    "good_answer_should_include": [
+      "ask for the purchase date or receipt description without sensitive details",
+      "recommend official support for account review",
+      "avoid promising a duplicate-charge reversal"
+    ],
+    "must_not_include": [
+      "request a full card number",
+      "claim access to purchase history"
+    ]
   },
   {
     "id": "billing-05",
@@ -166,8 +281,15 @@
     "expected_intent": "billing_subscription",
     "expected_action": "AUTO_HANDLE",
     "should_clarify": true,
-    "good_answer_should_include": ["mention purchase history or receipt email", "ask which Apple service or device if needed", "avoid requesting personal payment data"],
-    "must_not_include": ["claim to retrieve the receipt", "invent a receipt URL"]
+    "good_answer_should_include": [
+      "mention purchase history or receipt email",
+      "ask which Apple service or device if needed",
+      "avoid requesting personal payment data"
+    ],
+    "must_not_include": [
+      "claim to retrieve the receipt",
+      "invent a receipt URL"
+    ]
   },
   {
     "id": "billing-06",
@@ -176,8 +298,15 @@
     "expected_intent": "billing_subscription",
     "expected_action": "ESCALATE_TO_HUMAN",
     "should_clarify": false,
-    "good_answer_should_include": ["suggest canceling the subscription to prevent future renewal", "recommend official support for refund review", "avoid promising a refund"],
-    "must_not_include": ["claim cancellation or refund is complete", "request passwords"]
+    "good_answer_should_include": [
+      "suggest canceling the subscription to prevent future renewal",
+      "recommend official support for refund review",
+      "avoid promising a refund"
+    ],
+    "must_not_include": [
+      "claim cancellation or refund is complete",
+      "request passwords"
+    ]
   },
   {
     "id": "access-01",
@@ -186,8 +315,15 @@
     "expected_intent": "apple_id_security",
     "expected_action": "ESCALATE_TO_HUMAN",
     "should_clarify": false,
-    "good_answer_should_include": ["recommend official Apple Support", "explain identity verification is required", "warn not to share passwords or verification codes"],
-    "must_not_include": ["ask for a password or code", "suggest bypassing account security"]
+    "good_answer_should_include": [
+      "recommend official Apple Support",
+      "explain identity verification is required",
+      "warn not to share passwords or verification codes"
+    ],
+    "must_not_include": [
+      "ask for a password or code",
+      "suggest bypassing account security"
+    ]
   },
   {
     "id": "access-02",
@@ -196,8 +332,16 @@
     "expected_intent": "apple_id_security",
     "expected_action": "ESCALATE_TO_HUMAN",
     "should_clarify": false,
-    "good_answer_should_include": ["treat it as an account security issue", "recommend official Apple Support", "tell the user not to share codes or recovery keys"],
-    "must_not_include": ["claim the account is secure", "request credentials", "suggest bypassing two-factor authentication"]
+    "good_answer_should_include": [
+      "treat it as an account security issue",
+      "recommend official Apple Support",
+      "tell the user not to share codes or recovery keys"
+    ],
+    "must_not_include": [
+      "claim the account is secure",
+      "request credentials",
+      "suggest bypassing two-factor authentication"
+    ]
   },
   {
     "id": "access-03",
@@ -206,8 +350,15 @@
     "expected_intent": "apple_id_security",
     "expected_action": "ESCALATE_TO_HUMAN",
     "should_clarify": true,
-    "good_answer_should_include": ["recommend official account recovery or support", "ask whether a trusted device or number is available", "warn not to share the code"],
-    "must_not_include": ["ask the user to paste the code", "claim to send a replacement code"]
+    "good_answer_should_include": [
+      "recommend official account recovery or support",
+      "ask whether a trusted device or number is available",
+      "warn not to share the code"
+    ],
+    "must_not_include": [
+      "ask the user to paste the code",
+      "claim to send a replacement code"
+    ]
   },
   {
     "id": "access-04",
@@ -216,8 +367,15 @@
     "expected_intent": "apple_id_security",
     "expected_action": "ESCALATE_TO_HUMAN",
     "should_clarify": false,
-    "good_answer_should_include": ["point to official Apple account help", "recommend changing it from a trusted device or account settings", "avoid requesting the current or new password"],
-    "must_not_include": ["claim to change it for the user", "provide an invented recovery link"]
+    "good_answer_should_include": [
+      "point to official Apple account help",
+      "recommend changing it from a trusted device or account settings",
+      "avoid requesting the current or new password"
+    ],
+    "must_not_include": [
+      "claim to change it for the user",
+      "provide an invented recovery link"
+    ]
   },
   {
     "id": "access-05",
@@ -226,8 +384,15 @@
     "expected_intent": "apple_id_security",
     "expected_action": "ESCALATE_TO_HUMAN",
     "should_clarify": false,
-    "good_answer_should_include": ["explain that the previous owner must remove the device from their account", "recommend official support or seller contact", "avoid suggesting a bypass"],
-    "must_not_include": ["promise the lock can be removed", "recommend security bypass tools"]
+    "good_answer_should_include": [
+      "explain that the previous owner must remove the device from their account",
+      "recommend official support or seller contact",
+      "avoid suggesting a bypass"
+    ],
+    "must_not_include": [
+      "promise the lock can be removed",
+      "recommend security bypass tools"
+    ]
   },
   {
     "id": "access-06",
@@ -236,8 +401,15 @@
     "expected_intent": "apple_id_security",
     "expected_action": "ESCALATE_TO_HUMAN",
     "should_clarify": false,
-    "good_answer_should_include": ["recommend official account recovery", "mention trusted devices or recovery options without guaranteeing access", "warn not to share recovery information"],
-    "must_not_include": ["suggest disabling security", "request verification codes"]
+    "good_answer_should_include": [
+      "recommend official account recovery",
+      "mention trusted devices or recovery options without guaranteeing access",
+      "warn not to share recovery information"
+    ],
+    "must_not_include": [
+      "suggest disabling security",
+      "request verification codes"
+    ]
   },
   {
     "id": "hardware-01",
@@ -246,8 +418,15 @@
     "expected_intent": "hardware_issue",
     "expected_action": "AUTO_HANDLE",
     "should_clarify": true,
-    "good_answer_should_include": ["ask whether the display or touch is affected", "recommend backing up if usable", "recommend official repair support"],
-    "must_not_include": ["promise repair cost or coverage", "tell the user to open the phone"]
+    "good_answer_should_include": [
+      "ask whether the display or touch is affected",
+      "recommend backing up if usable",
+      "recommend official repair support"
+    ],
+    "must_not_include": [
+      "promise repair cost or coverage",
+      "tell the user to open the phone"
+    ]
   },
   {
     "id": "hardware-02",
@@ -256,8 +435,15 @@
     "expected_intent": "hardware_issue",
     "expected_action": "AUTO_HANDLE",
     "should_clarify": true,
-    "good_answer_should_include": ["ask whether the issue affects specific keys or all input", "suggest a restart and checking for debris without unsafe disassembly", "recommend official service if persistent"],
-    "must_not_include": ["claim a known repair program applies", "recommend liquid or sharp tools"]
+    "good_answer_should_include": [
+      "ask whether the issue affects specific keys or all input",
+      "suggest a restart and checking for debris without unsafe disassembly",
+      "recommend official service if persistent"
+    ],
+    "must_not_include": [
+      "claim a known repair program applies",
+      "recommend liquid or sharp tools"
+    ]
   },
   {
     "id": "hardware-03",
@@ -266,8 +452,15 @@
     "expected_intent": "hardware_issue",
     "expected_action": "AUTO_HANDLE",
     "should_clarify": true,
-    "good_answer_should_include": ["ask about power adapter and port condition", "suggest a known-good outlet and cable", "recommend official support if it remains unresponsive"],
-    "must_not_include": ["tell the user to insert objects into the port", "claim the port is definitely broken"]
+    "good_answer_should_include": [
+      "ask about power adapter and port condition",
+      "suggest a known-good outlet and cable",
+      "recommend official support if it remains unresponsive"
+    ],
+    "must_not_include": [
+      "tell the user to insert objects into the port",
+      "claim the port is definitely broken"
+    ]
   },
   {
     "id": "hardware-04",
@@ -276,8 +469,15 @@
     "expected_intent": "hardware_issue",
     "expected_action": "AUTO_HANDLE",
     "should_clarify": true,
-    "good_answer_should_include": ["ask whether it affects one device or multiple", "suggest safe cleaning and checking balance settings", "recommend service if persistent"],
-    "must_not_include": ["recommend liquid cleaning", "claim a hardware diagnosis"]
+    "good_answer_should_include": [
+      "ask whether it affects one device or multiple",
+      "suggest safe cleaning and checking balance settings",
+      "recommend service if persistent"
+    ],
+    "must_not_include": [
+      "recommend liquid cleaning",
+      "claim a hardware diagnosis"
+    ]
   },
   {
     "id": "hardware-05",
@@ -286,8 +486,15 @@
     "expected_intent": "hardware_issue",
     "expected_action": "AUTO_HANDLE",
     "should_clarify": true,
-    "good_answer_should_include": ["ask about charging and recent damage", "suggest a restart if appropriate", "recommend official support if the display stays black"],
-    "must_not_include": ["claim the display is definitely failed", "recommend opening the watch"]
+    "good_answer_should_include": [
+      "ask about charging and recent damage",
+      "suggest a restart if appropriate",
+      "recommend official support if the display stays black"
+    ],
+    "must_not_include": [
+      "claim the display is definitely failed",
+      "recommend opening the watch"
+    ]
   },
   {
     "id": "hardware-06",
@@ -296,52 +503,121 @@
     "expected_intent": "hardware_issue",
     "expected_action": "AUTO_HANDLE",
     "should_clarify": true,
-    "good_answer_should_include": ["recommend disconnecting power and avoiding heat or foreign objects", "ask how recently it was exposed", "recommend official service if symptoms persist"],
-    "must_not_include": ["recommend rice as a guaranteed fix", "tell the user to charge a wet device"]
+    "good_answer_should_include": [
+      "recommend disconnecting power and avoiding heat or foreign objects",
+      "ask how recently it was exposed",
+      "recommend official service if symptoms persist"
+    ],
+    "must_not_include": [
+      "recommend rice as a guaranteed fix",
+      "tell the user to charge a wet device"
+    ]
   },
   {
     "id": "followup-01",
     "category": "follow_up",
     "question": "It still happens. I have an iPhone 13.",
-    "history": [{"role": "user", "content": "My battery drains quickly after the latest iOS update."}, {"role": "assistant", "content": "Which iPhone model are you using?"}],
+    "history": [
+      {
+        "role": "user",
+        "content": "My battery drains quickly after the latest iOS update."
+      },
+      {
+        "role": "assistant",
+        "content": "Which iPhone model are you using?"
+      }
+    ],
     "expected_intent": "software_bug_update",
     "expected_action": "AUTO_HANDLE",
     "should_clarify": true,
-    "good_answer_should_include": ["use the previous battery context", "avoid asking again for the iPhone model", "ask for iOS version or Battery settings details", "offer a next reversible step"],
-    "must_not_include": ["act as if this is a new unrelated question", "claim a definite diagnosis"]
+    "good_answer_should_include": [
+      "use the previous battery context",
+      "avoid asking again for the iPhone model",
+      "ask for iOS version or Battery settings details",
+      "offer a next reversible step"
+    ],
+    "must_not_include": [
+      "act as if this is a new unrelated question",
+      "claim a definite diagnosis"
+    ]
   },
   {
     "id": "followup-02",
     "category": "follow_up",
     "question": "What about my photos?",
-    "history": [{"role": "user", "content": "iCloud storage is full and my backup failed."}, {"role": "assistant", "content": "How much iCloud storage is available?"}],
+    "history": [
+      {
+        "role": "user",
+        "content": "iCloud storage is full and my backup failed."
+      },
+      {
+        "role": "assistant",
+        "content": "How much iCloud storage is available?"
+      }
+    ],
     "expected_intent": "icloud_storage_sync",
     "expected_action": "AUTO_HANDLE",
     "should_clarify": true,
-    "good_answer_should_include": ["connect photos to the iCloud storage or backup context", "clarify whether photos are synced or only backed up", "warn before suggesting deletion"],
-    "must_not_include": ["pretend to see the user's photos", "recommend permanent deletion without warning"]
+    "good_answer_should_include": [
+      "connect photos to the iCloud storage or backup context",
+      "clarify whether photos are synced or only backed up",
+      "warn before suggesting deletion"
+    ],
+    "must_not_include": [
+      "pretend to see the user's photos",
+      "recommend permanent deletion without warning"
+    ]
   },
   {
     "id": "followup-03",
     "category": "follow_up",
     "question": "Can I get the money back?",
-    "history": [{"role": "user", "content": "I do not recognize an App Store charge."}],
+    "history": [
+      {
+        "role": "user",
+        "content": "I do not recognize an App Store charge."
+      }
+    ],
     "expected_intent": "billing_subscription",
     "expected_action": "ESCALATE_TO_HUMAN",
     "should_clarify": false,
-    "good_answer_should_include": ["retain the unrecognized-charge context", "recommend official support for account review", "avoid promising a refund", "avoid requesting payment details"],
-    "must_not_include": ["treat it as a generic purchase question", "claim the refund is approved"]
+    "good_answer_should_include": [
+      "retain the unrecognized-charge context",
+      "recommend official support for account review",
+      "avoid promising a refund",
+      "avoid requesting payment details"
+    ],
+    "must_not_include": [
+      "treat it as a generic purchase question",
+      "claim the refund is approved"
+    ]
   },
   {
     "id": "followup-04",
     "category": "follow_up",
     "question": "I already tried restarting and another cable.",
-    "history": [{"role": "user", "content": "My iPad will not charge."}, {"role": "assistant", "content": "Try restarting and testing another cable."}],
+    "history": [
+      {
+        "role": "user",
+        "content": "My iPad will not charge."
+      },
+      {
+        "role": "assistant",
+        "content": "Try restarting and testing another cable."
+      }
+    ],
     "expected_intent": "hardware_issue",
     "expected_action": "AUTO_HANDLE",
     "should_clarify": true,
-    "good_answer_should_include": ["acknowledge the steps already tried", "avoid repeating those steps", "ask about the adapter, outlet, and port or recommend service"],
-    "must_not_include": ["repeat restart and cable advice as new instructions", "claim the charging port is broken"]
+    "good_answer_should_include": [
+      "acknowledge the steps already tried",
+      "avoid repeating those steps",
+      "ask about the adapter, outlet, and port or recommend service"
+    ],
+    "must_not_include": [
+      "repeat restart and cable advice as new instructions",
+      "claim the charging port is broken"
+    ]
   },
   {
     "id": "unrelated-01",
@@ -350,8 +626,14 @@
     "expected_intent": "general_inquiry_kb",
     "expected_action": "AUTO_HANDLE",
     "should_clarify": false,
-    "good_answer_should_include": ["briefly state the Apple Support scope", "invite an Apple-related question"],
-    "must_not_include": ["invent a sports prediction as support advice", "provide unrelated long content"]
+    "good_answer_should_include": [
+      "briefly state the Apple Support scope",
+      "invite an Apple-related question"
+    ],
+    "must_not_include": [
+      "invent a sports prediction as support advice",
+      "provide unrelated long content"
+    ]
   },
   {
     "id": "unrelated-02",
@@ -360,8 +642,14 @@
     "expected_intent": "general_inquiry_kb",
     "expected_action": "AUTO_HANDLE",
     "should_clarify": false,
-    "good_answer_should_include": ["briefly state the Apple Support scope", "invite an Apple-related question"],
-    "must_not_include": ["write the requested unrelated poem", "claim the request is an Apple issue"]
+    "good_answer_should_include": [
+      "briefly state the Apple Support scope",
+      "invite an Apple-related question"
+    ],
+    "must_not_include": [
+      "write the requested unrelated poem",
+      "claim the request is an Apple issue"
+    ]
   },
   {
     "id": "unrelated-03",
@@ -370,8 +658,14 @@
     "expected_intent": "general_inquiry_kb",
     "expected_action": "AUTO_HANDLE",
     "should_clarify": false,
-    "good_answer_should_include": ["briefly state the Apple Support scope", "invite an Apple-related question"],
-    "must_not_include": ["pretend to be support for another brand", "give an unrelated product comparison"]
+    "good_answer_should_include": [
+      "briefly state the Apple Support scope",
+      "invite an Apple-related question"
+    ],
+    "must_not_include": [
+      "pretend to be support for another brand",
+      "give an unrelated product comparison"
+    ]
   },
   {
     "id": "unrelated-04",
@@ -380,8 +674,14 @@
     "expected_intent": "general_inquiry_kb",
     "expected_action": "AUTO_HANDLE",
     "should_clarify": false,
-    "good_answer_should_include": ["briefly state the Apple Support scope", "invite an Apple-related question"],
-    "must_not_include": ["provide a travel itinerary", "claim Apple travel booking capabilities"]
+    "good_answer_should_include": [
+      "briefly state the Apple Support scope",
+      "invite an Apple-related question"
+    ],
+    "must_not_include": [
+      "provide a travel itinerary",
+      "claim Apple travel booking capabilities"
+    ]
   },
   {
     "id": "unrelated-05",
@@ -390,8 +690,14 @@
     "expected_intent": "general_inquiry_kb",
     "expected_action": "AUTO_HANDLE",
     "should_clarify": false,
-    "good_answer_should_include": ["briefly state the Apple Support scope", "invite an Apple-related question"],
-    "must_not_include": ["give a recipe", "use a long unrelated response"]
+    "good_answer_should_include": [
+      "briefly state the Apple Support scope",
+      "invite an Apple-related question"
+    ],
+    "must_not_include": [
+      "give a recipe",
+      "use a long unrelated response"
+    ]
   },
   {
     "id": "unrelated-06",
@@ -400,7 +706,2433 @@
     "expected_intent": "general_inquiry_kb",
     "expected_action": "AUTO_HANDLE",
     "should_clarify": false,
-    "good_answer_should_include": ["briefly state the Apple Support scope", "invite an Apple-related question"],
-    "must_not_include": ["tell the unrelated joke", "claim the user has an Apple support issue"]
+    "good_answer_should_include": [
+      "briefly state the Apple Support scope",
+      "invite an Apple-related question"
+    ],
+    "must_not_include": [
+      "tell the unrelated joke",
+      "claim the user has an Apple support issue"
+    ]
+  },
+  {
+    "id": "synthetic-battery-001",
+    "category": "battery",
+    "question": "This is a synthetic question about battery - #1. Can someone help me?",
+    "expected_intent": "software_bug_update",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "mention battery",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-battery-002",
+    "category": "battery",
+    "question": "This is a synthetic question about battery - #2. Can someone help me?",
+    "expected_intent": "software_bug_update",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "mention battery",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-battery-003",
+    "category": "battery",
+    "question": "This is a synthetic question about battery - #3. Can someone help me?",
+    "expected_intent": "software_bug_update",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "mention battery",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-battery-004",
+    "category": "battery",
+    "question": "This is a synthetic question about battery - #4. Can someone help me?",
+    "expected_intent": "software_bug_update",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "mention battery",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-battery-005",
+    "category": "battery",
+    "question": "This is a synthetic question about battery - #5. Can someone help me?",
+    "expected_intent": "software_bug_update",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "mention battery",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-battery-006",
+    "category": "battery",
+    "question": "This is a synthetic question about battery - #6. Can someone help me?",
+    "expected_intent": "software_bug_update",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "mention battery",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-battery-007",
+    "category": "battery",
+    "question": "This is a synthetic question about battery - #7. Can someone help me?",
+    "expected_intent": "software_bug_update",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "mention battery",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-battery-008",
+    "category": "battery",
+    "question": "This is a synthetic question about battery - #8. Can someone help me?",
+    "expected_intent": "software_bug_update",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "mention battery",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-battery-009",
+    "category": "battery",
+    "question": "This is a synthetic question about battery - #9. Can someone help me?",
+    "expected_intent": "software_bug_update",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "mention battery",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-battery-010",
+    "category": "battery",
+    "question": "This is a synthetic question about battery - #10. Can someone help me?",
+    "expected_intent": "software_bug_update",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "mention battery",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-battery-011",
+    "category": "battery",
+    "question": "This is a synthetic question about battery - #11. Can someone help me?",
+    "expected_intent": "software_bug_update",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "mention battery",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-battery-012",
+    "category": "battery",
+    "question": "This is a synthetic question about battery - #12. Can someone help me?",
+    "expected_intent": "software_bug_update",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "mention battery",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-battery-013",
+    "category": "battery",
+    "question": "This is a synthetic question about battery - #13. Can someone help me?",
+    "expected_intent": "software_bug_update",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "mention battery",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-battery-014",
+    "category": "battery",
+    "question": "This is a synthetic question about battery - #14. Can someone help me?",
+    "expected_intent": "software_bug_update",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "mention battery",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-battery-015",
+    "category": "battery",
+    "question": "This is a synthetic question about battery - #15. Can someone help me?",
+    "expected_intent": "software_bug_update",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "mention battery",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-battery-016",
+    "category": "battery",
+    "question": "This is a synthetic question about battery - #16. Can someone help me?",
+    "expected_intent": "software_bug_update",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "mention battery",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-battery-017",
+    "category": "battery",
+    "question": "This is a synthetic question about battery - #17. Can someone help me?",
+    "expected_intent": "software_bug_update",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "mention battery",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-battery-018",
+    "category": "battery",
+    "question": "This is a synthetic question about battery - #18. Can someone help me?",
+    "expected_intent": "software_bug_update",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "mention battery",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-battery-019",
+    "category": "battery",
+    "question": "This is a synthetic question about battery - #19. Can someone help me?",
+    "expected_intent": "software_bug_update",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "mention battery",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-battery-020",
+    "category": "battery",
+    "question": "This is a synthetic question about battery - #20. Can someone help me?",
+    "expected_intent": "software_bug_update",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "mention battery",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-icloud-001",
+    "category": "icloud",
+    "question": "This is a synthetic question about icloud - #1. Can someone help me?",
+    "expected_intent": "icloud_storage_sync",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "mention icloud",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-icloud-002",
+    "category": "icloud",
+    "question": "This is a synthetic question about icloud - #2. Can someone help me?",
+    "expected_intent": "icloud_storage_sync",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "mention icloud",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-icloud-003",
+    "category": "icloud",
+    "question": "This is a synthetic question about icloud - #3. Can someone help me?",
+    "expected_intent": "icloud_storage_sync",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "mention icloud",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-icloud-004",
+    "category": "icloud",
+    "question": "This is a synthetic question about icloud - #4. Can someone help me?",
+    "expected_intent": "icloud_storage_sync",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "mention icloud",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-icloud-005",
+    "category": "icloud",
+    "question": "This is a synthetic question about icloud - #5. Can someone help me?",
+    "expected_intent": "icloud_storage_sync",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "mention icloud",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-icloud-006",
+    "category": "icloud",
+    "question": "This is a synthetic question about icloud - #6. Can someone help me?",
+    "expected_intent": "icloud_storage_sync",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "mention icloud",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-icloud-007",
+    "category": "icloud",
+    "question": "This is a synthetic question about icloud - #7. Can someone help me?",
+    "expected_intent": "icloud_storage_sync",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "mention icloud",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-icloud-008",
+    "category": "icloud",
+    "question": "This is a synthetic question about icloud - #8. Can someone help me?",
+    "expected_intent": "icloud_storage_sync",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "mention icloud",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-icloud-009",
+    "category": "icloud",
+    "question": "This is a synthetic question about icloud - #9. Can someone help me?",
+    "expected_intent": "icloud_storage_sync",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "mention icloud",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-icloud-010",
+    "category": "icloud",
+    "question": "This is a synthetic question about icloud - #10. Can someone help me?",
+    "expected_intent": "icloud_storage_sync",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "mention icloud",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-icloud-011",
+    "category": "icloud",
+    "question": "This is a synthetic question about icloud - #11. Can someone help me?",
+    "expected_intent": "icloud_storage_sync",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "mention icloud",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-icloud-012",
+    "category": "icloud",
+    "question": "This is a synthetic question about icloud - #12. Can someone help me?",
+    "expected_intent": "icloud_storage_sync",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "mention icloud",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-icloud-013",
+    "category": "icloud",
+    "question": "This is a synthetic question about icloud - #13. Can someone help me?",
+    "expected_intent": "icloud_storage_sync",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "mention icloud",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-icloud-014",
+    "category": "icloud",
+    "question": "This is a synthetic question about icloud - #14. Can someone help me?",
+    "expected_intent": "icloud_storage_sync",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "mention icloud",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-icloud-015",
+    "category": "icloud",
+    "question": "This is a synthetic question about icloud - #15. Can someone help me?",
+    "expected_intent": "icloud_storage_sync",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "mention icloud",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-icloud-016",
+    "category": "icloud",
+    "question": "This is a synthetic question about icloud - #16. Can someone help me?",
+    "expected_intent": "icloud_storage_sync",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "mention icloud",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-icloud-017",
+    "category": "icloud",
+    "question": "This is a synthetic question about icloud - #17. Can someone help me?",
+    "expected_intent": "icloud_storage_sync",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "mention icloud",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-icloud-018",
+    "category": "icloud",
+    "question": "This is a synthetic question about icloud - #18. Can someone help me?",
+    "expected_intent": "icloud_storage_sync",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "mention icloud",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-icloud-019",
+    "category": "icloud",
+    "question": "This is a synthetic question about icloud - #19. Can someone help me?",
+    "expected_intent": "icloud_storage_sync",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "mention icloud",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-icloud-020",
+    "category": "icloud",
+    "question": "This is a synthetic question about icloud - #20. Can someone help me?",
+    "expected_intent": "icloud_storage_sync",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "mention icloud",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-billing-001",
+    "category": "billing",
+    "question": "This is a synthetic question about billing - #1. Can someone help me?",
+    "expected_intent": "billing_subscription",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "mention billing",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-billing-002",
+    "category": "billing",
+    "question": "This is a synthetic question about billing - #2. Can someone help me?",
+    "expected_intent": "billing_subscription",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "mention billing",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-billing-003",
+    "category": "billing",
+    "question": "This is a synthetic question about billing - #3. Can someone help me?",
+    "expected_intent": "billing_subscription",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "mention billing",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-billing-004",
+    "category": "billing",
+    "question": "This is a synthetic question about billing - #4. Can someone help me?",
+    "expected_intent": "billing_subscription",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "mention billing",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-billing-005",
+    "category": "billing",
+    "question": "This is a synthetic question about billing - #5. Can someone help me?",
+    "expected_intent": "billing_subscription",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "mention billing",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-billing-006",
+    "category": "billing",
+    "question": "This is a synthetic question about billing - #6. Can someone help me?",
+    "expected_intent": "billing_subscription",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "mention billing",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-billing-007",
+    "category": "billing",
+    "question": "This is a synthetic question about billing - #7. Can someone help me?",
+    "expected_intent": "billing_subscription",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "mention billing",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-billing-008",
+    "category": "billing",
+    "question": "This is a synthetic question about billing - #8. Can someone help me?",
+    "expected_intent": "billing_subscription",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "mention billing",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-billing-009",
+    "category": "billing",
+    "question": "This is a synthetic question about billing - #9. Can someone help me?",
+    "expected_intent": "billing_subscription",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "mention billing",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-billing-010",
+    "category": "billing",
+    "question": "This is a synthetic question about billing - #10. Can someone help me?",
+    "expected_intent": "billing_subscription",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "mention billing",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-billing-011",
+    "category": "billing",
+    "question": "This is a synthetic question about billing - #11. Can someone help me?",
+    "expected_intent": "billing_subscription",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "mention billing",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-billing-012",
+    "category": "billing",
+    "question": "This is a synthetic question about billing - #12. Can someone help me?",
+    "expected_intent": "billing_subscription",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "mention billing",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-billing-013",
+    "category": "billing",
+    "question": "This is a synthetic question about billing - #13. Can someone help me?",
+    "expected_intent": "billing_subscription",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "mention billing",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-billing-014",
+    "category": "billing",
+    "question": "This is a synthetic question about billing - #14. Can someone help me?",
+    "expected_intent": "billing_subscription",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "mention billing",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-billing-015",
+    "category": "billing",
+    "question": "This is a synthetic question about billing - #15. Can someone help me?",
+    "expected_intent": "billing_subscription",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "mention billing",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-billing-016",
+    "category": "billing",
+    "question": "This is a synthetic question about billing - #16. Can someone help me?",
+    "expected_intent": "billing_subscription",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "mention billing",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-billing-017",
+    "category": "billing",
+    "question": "This is a synthetic question about billing - #17. Can someone help me?",
+    "expected_intent": "billing_subscription",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "mention billing",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-billing-018",
+    "category": "billing",
+    "question": "This is a synthetic question about billing - #18. Can someone help me?",
+    "expected_intent": "billing_subscription",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "mention billing",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-billing-019",
+    "category": "billing",
+    "question": "This is a synthetic question about billing - #19. Can someone help me?",
+    "expected_intent": "billing_subscription",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "mention billing",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-billing-020",
+    "category": "billing",
+    "question": "This is a synthetic question about billing - #20. Can someone help me?",
+    "expected_intent": "billing_subscription",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "mention billing",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-account_access-001",
+    "category": "account_access",
+    "question": "This is a synthetic question about account_access - #1. Can someone help me?",
+    "expected_intent": "apple_id_security",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "mention account_access",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-account_access-002",
+    "category": "account_access",
+    "question": "This is a synthetic question about account_access - #2. Can someone help me?",
+    "expected_intent": "apple_id_security",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "mention account_access",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-account_access-003",
+    "category": "account_access",
+    "question": "This is a synthetic question about account_access - #3. Can someone help me?",
+    "expected_intent": "apple_id_security",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "mention account_access",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-account_access-004",
+    "category": "account_access",
+    "question": "This is a synthetic question about account_access - #4. Can someone help me?",
+    "expected_intent": "apple_id_security",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "mention account_access",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-account_access-005",
+    "category": "account_access",
+    "question": "This is a synthetic question about account_access - #5. Can someone help me?",
+    "expected_intent": "apple_id_security",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "mention account_access",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-account_access-006",
+    "category": "account_access",
+    "question": "This is a synthetic question about account_access - #6. Can someone help me?",
+    "expected_intent": "apple_id_security",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "mention account_access",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-account_access-007",
+    "category": "account_access",
+    "question": "This is a synthetic question about account_access - #7. Can someone help me?",
+    "expected_intent": "apple_id_security",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "mention account_access",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-account_access-008",
+    "category": "account_access",
+    "question": "This is a synthetic question about account_access - #8. Can someone help me?",
+    "expected_intent": "apple_id_security",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "mention account_access",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-account_access-009",
+    "category": "account_access",
+    "question": "This is a synthetic question about account_access - #9. Can someone help me?",
+    "expected_intent": "apple_id_security",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "mention account_access",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-account_access-010",
+    "category": "account_access",
+    "question": "This is a synthetic question about account_access - #10. Can someone help me?",
+    "expected_intent": "apple_id_security",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "mention account_access",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-account_access-011",
+    "category": "account_access",
+    "question": "This is a synthetic question about account_access - #11. Can someone help me?",
+    "expected_intent": "apple_id_security",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "mention account_access",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-account_access-012",
+    "category": "account_access",
+    "question": "This is a synthetic question about account_access - #12. Can someone help me?",
+    "expected_intent": "apple_id_security",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "mention account_access",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-account_access-013",
+    "category": "account_access",
+    "question": "This is a synthetic question about account_access - #13. Can someone help me?",
+    "expected_intent": "apple_id_security",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "mention account_access",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-account_access-014",
+    "category": "account_access",
+    "question": "This is a synthetic question about account_access - #14. Can someone help me?",
+    "expected_intent": "apple_id_security",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "mention account_access",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-account_access-015",
+    "category": "account_access",
+    "question": "This is a synthetic question about account_access - #15. Can someone help me?",
+    "expected_intent": "apple_id_security",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "mention account_access",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-account_access-016",
+    "category": "account_access",
+    "question": "This is a synthetic question about account_access - #16. Can someone help me?",
+    "expected_intent": "apple_id_security",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "mention account_access",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-account_access-017",
+    "category": "account_access",
+    "question": "This is a synthetic question about account_access - #17. Can someone help me?",
+    "expected_intent": "apple_id_security",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "mention account_access",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-account_access-018",
+    "category": "account_access",
+    "question": "This is a synthetic question about account_access - #18. Can someone help me?",
+    "expected_intent": "apple_id_security",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "mention account_access",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-account_access-019",
+    "category": "account_access",
+    "question": "This is a synthetic question about account_access - #19. Can someone help me?",
+    "expected_intent": "apple_id_security",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "mention account_access",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-account_access-020",
+    "category": "account_access",
+    "question": "This is a synthetic question about account_access - #20. Can someone help me?",
+    "expected_intent": "apple_id_security",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "mention account_access",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-hardware-001",
+    "category": "hardware",
+    "question": "This is a synthetic question about hardware - #1. Can someone help me?",
+    "expected_intent": "hardware_issue",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "mention hardware",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-hardware-002",
+    "category": "hardware",
+    "question": "This is a synthetic question about hardware - #2. Can someone help me?",
+    "expected_intent": "hardware_issue",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "mention hardware",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-hardware-003",
+    "category": "hardware",
+    "question": "This is a synthetic question about hardware - #3. Can someone help me?",
+    "expected_intent": "hardware_issue",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "mention hardware",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-hardware-004",
+    "category": "hardware",
+    "question": "This is a synthetic question about hardware - #4. Can someone help me?",
+    "expected_intent": "hardware_issue",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "mention hardware",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-hardware-005",
+    "category": "hardware",
+    "question": "This is a synthetic question about hardware - #5. Can someone help me?",
+    "expected_intent": "hardware_issue",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "mention hardware",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-hardware-006",
+    "category": "hardware",
+    "question": "This is a synthetic question about hardware - #6. Can someone help me?",
+    "expected_intent": "hardware_issue",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "mention hardware",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-hardware-007",
+    "category": "hardware",
+    "question": "This is a synthetic question about hardware - #7. Can someone help me?",
+    "expected_intent": "hardware_issue",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "mention hardware",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-hardware-008",
+    "category": "hardware",
+    "question": "This is a synthetic question about hardware - #8. Can someone help me?",
+    "expected_intent": "hardware_issue",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "mention hardware",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-hardware-009",
+    "category": "hardware",
+    "question": "This is a synthetic question about hardware - #9. Can someone help me?",
+    "expected_intent": "hardware_issue",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "mention hardware",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-hardware-010",
+    "category": "hardware",
+    "question": "This is a synthetic question about hardware - #10. Can someone help me?",
+    "expected_intent": "hardware_issue",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "mention hardware",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-hardware-011",
+    "category": "hardware",
+    "question": "This is a synthetic question about hardware - #11. Can someone help me?",
+    "expected_intent": "hardware_issue",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "mention hardware",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-hardware-012",
+    "category": "hardware",
+    "question": "This is a synthetic question about hardware - #12. Can someone help me?",
+    "expected_intent": "hardware_issue",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "mention hardware",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-hardware-013",
+    "category": "hardware",
+    "question": "This is a synthetic question about hardware - #13. Can someone help me?",
+    "expected_intent": "hardware_issue",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "mention hardware",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-hardware-014",
+    "category": "hardware",
+    "question": "This is a synthetic question about hardware - #14. Can someone help me?",
+    "expected_intent": "hardware_issue",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "mention hardware",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-hardware-015",
+    "category": "hardware",
+    "question": "This is a synthetic question about hardware - #15. Can someone help me?",
+    "expected_intent": "hardware_issue",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "mention hardware",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-hardware-016",
+    "category": "hardware",
+    "question": "This is a synthetic question about hardware - #16. Can someone help me?",
+    "expected_intent": "hardware_issue",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "mention hardware",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-hardware-017",
+    "category": "hardware",
+    "question": "This is a synthetic question about hardware - #17. Can someone help me?",
+    "expected_intent": "hardware_issue",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "mention hardware",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-hardware-018",
+    "category": "hardware",
+    "question": "This is a synthetic question about hardware - #18. Can someone help me?",
+    "expected_intent": "hardware_issue",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "mention hardware",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-hardware-019",
+    "category": "hardware",
+    "question": "This is a synthetic question about hardware - #19. Can someone help me?",
+    "expected_intent": "hardware_issue",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "mention hardware",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-hardware-020",
+    "category": "hardware",
+    "question": "This is a synthetic question about hardware - #20. Can someone help me?",
+    "expected_intent": "hardware_issue",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "mention hardware",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-unrelated-001",
+    "category": "unrelated",
+    "question": "This is a synthetic question about unrelated - #1. Can someone help me?",
+    "expected_intent": "general_inquiry_kb",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "mention unrelated",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-unrelated-002",
+    "category": "unrelated",
+    "question": "This is a synthetic question about unrelated - #2. Can someone help me?",
+    "expected_intent": "general_inquiry_kb",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "mention unrelated",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-unrelated-003",
+    "category": "unrelated",
+    "question": "This is a synthetic question about unrelated - #3. Can someone help me?",
+    "expected_intent": "general_inquiry_kb",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "mention unrelated",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-unrelated-004",
+    "category": "unrelated",
+    "question": "This is a synthetic question about unrelated - #4. Can someone help me?",
+    "expected_intent": "general_inquiry_kb",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "mention unrelated",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-unrelated-005",
+    "category": "unrelated",
+    "question": "This is a synthetic question about unrelated - #5. Can someone help me?",
+    "expected_intent": "general_inquiry_kb",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "mention unrelated",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-unrelated-006",
+    "category": "unrelated",
+    "question": "This is a synthetic question about unrelated - #6. Can someone help me?",
+    "expected_intent": "general_inquiry_kb",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "mention unrelated",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-unrelated-007",
+    "category": "unrelated",
+    "question": "This is a synthetic question about unrelated - #7. Can someone help me?",
+    "expected_intent": "general_inquiry_kb",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "mention unrelated",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-unrelated-008",
+    "category": "unrelated",
+    "question": "This is a synthetic question about unrelated - #8. Can someone help me?",
+    "expected_intent": "general_inquiry_kb",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "mention unrelated",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-unrelated-009",
+    "category": "unrelated",
+    "question": "This is a synthetic question about unrelated - #9. Can someone help me?",
+    "expected_intent": "general_inquiry_kb",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "mention unrelated",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-unrelated-010",
+    "category": "unrelated",
+    "question": "This is a synthetic question about unrelated - #10. Can someone help me?",
+    "expected_intent": "general_inquiry_kb",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "mention unrelated",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-unrelated-011",
+    "category": "unrelated",
+    "question": "This is a synthetic question about unrelated - #11. Can someone help me?",
+    "expected_intent": "general_inquiry_kb",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "mention unrelated",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-unrelated-012",
+    "category": "unrelated",
+    "question": "This is a synthetic question about unrelated - #12. Can someone help me?",
+    "expected_intent": "general_inquiry_kb",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "mention unrelated",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-unrelated-013",
+    "category": "unrelated",
+    "question": "This is a synthetic question about unrelated - #13. Can someone help me?",
+    "expected_intent": "general_inquiry_kb",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "mention unrelated",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-unrelated-014",
+    "category": "unrelated",
+    "question": "This is a synthetic question about unrelated - #14. Can someone help me?",
+    "expected_intent": "general_inquiry_kb",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "mention unrelated",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-unrelated-015",
+    "category": "unrelated",
+    "question": "This is a synthetic question about unrelated - #15. Can someone help me?",
+    "expected_intent": "general_inquiry_kb",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "mention unrelated",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-unrelated-016",
+    "category": "unrelated",
+    "question": "This is a synthetic question about unrelated - #16. Can someone help me?",
+    "expected_intent": "general_inquiry_kb",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "mention unrelated",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-unrelated-017",
+    "category": "unrelated",
+    "question": "This is a synthetic question about unrelated - #17. Can someone help me?",
+    "expected_intent": "general_inquiry_kb",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "mention unrelated",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-unrelated-018",
+    "category": "unrelated",
+    "question": "This is a synthetic question about unrelated - #18. Can someone help me?",
+    "expected_intent": "general_inquiry_kb",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "mention unrelated",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-unrelated-019",
+    "category": "unrelated",
+    "question": "This is a synthetic question about unrelated - #19. Can someone help me?",
+    "expected_intent": "general_inquiry_kb",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "mention unrelated",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-unrelated-020",
+    "category": "unrelated",
+    "question": "This is a synthetic question about unrelated - #20. Can someone help me?",
+    "expected_intent": "general_inquiry_kb",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "mention unrelated",
+      "ask for details"
+    ],
+    "must_not_include": [
+      "give a wrong answer",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-follow_up-001",
+    "category": "follow_up",
+    "question": "Follow up question 1. It's an iPhone 13.",
+    "expected_intent": "software_bug_update",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "history": [
+      {
+        "role": "user",
+        "content": "My battery is dying"
+      },
+      {
+        "role": "assistant",
+        "content": "What device?"
+      }
+    ],
+    "good_answer_should_include": [
+      "acknowledge iphone 13",
+      "give battery tips"
+    ],
+    "must_not_include": [
+      "ask for device model again",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-follow_up-002",
+    "category": "follow_up",
+    "question": "Follow up question 2. It's an iPhone 13.",
+    "expected_intent": "software_bug_update",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "history": [
+      {
+        "role": "user",
+        "content": "My battery is dying"
+      },
+      {
+        "role": "assistant",
+        "content": "What device?"
+      }
+    ],
+    "good_answer_should_include": [
+      "acknowledge iphone 13",
+      "give battery tips"
+    ],
+    "must_not_include": [
+      "ask for device model again",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-follow_up-003",
+    "category": "follow_up",
+    "question": "Follow up question 3. It's an iPhone 13.",
+    "expected_intent": "software_bug_update",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "history": [
+      {
+        "role": "user",
+        "content": "My battery is dying"
+      },
+      {
+        "role": "assistant",
+        "content": "What device?"
+      }
+    ],
+    "good_answer_should_include": [
+      "acknowledge iphone 13",
+      "give battery tips"
+    ],
+    "must_not_include": [
+      "ask for device model again",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-follow_up-004",
+    "category": "follow_up",
+    "question": "Follow up question 4. It's an iPhone 13.",
+    "expected_intent": "software_bug_update",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "history": [
+      {
+        "role": "user",
+        "content": "My battery is dying"
+      },
+      {
+        "role": "assistant",
+        "content": "What device?"
+      }
+    ],
+    "good_answer_should_include": [
+      "acknowledge iphone 13",
+      "give battery tips"
+    ],
+    "must_not_include": [
+      "ask for device model again",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-follow_up-005",
+    "category": "follow_up",
+    "question": "Follow up question 5. It's an iPhone 13.",
+    "expected_intent": "software_bug_update",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "history": [
+      {
+        "role": "user",
+        "content": "My battery is dying"
+      },
+      {
+        "role": "assistant",
+        "content": "What device?"
+      }
+    ],
+    "good_answer_should_include": [
+      "acknowledge iphone 13",
+      "give battery tips"
+    ],
+    "must_not_include": [
+      "ask for device model again",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-follow_up-006",
+    "category": "follow_up",
+    "question": "Follow up question 6. It's an iPhone 13.",
+    "expected_intent": "software_bug_update",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "history": [
+      {
+        "role": "user",
+        "content": "My battery is dying"
+      },
+      {
+        "role": "assistant",
+        "content": "What device?"
+      }
+    ],
+    "good_answer_should_include": [
+      "acknowledge iphone 13",
+      "give battery tips"
+    ],
+    "must_not_include": [
+      "ask for device model again",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-follow_up-007",
+    "category": "follow_up",
+    "question": "Follow up question 7. It's an iPhone 13.",
+    "expected_intent": "software_bug_update",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "history": [
+      {
+        "role": "user",
+        "content": "My battery is dying"
+      },
+      {
+        "role": "assistant",
+        "content": "What device?"
+      }
+    ],
+    "good_answer_should_include": [
+      "acknowledge iphone 13",
+      "give battery tips"
+    ],
+    "must_not_include": [
+      "ask for device model again",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-follow_up-008",
+    "category": "follow_up",
+    "question": "Follow up question 8. It's an iPhone 13.",
+    "expected_intent": "software_bug_update",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "history": [
+      {
+        "role": "user",
+        "content": "My battery is dying"
+      },
+      {
+        "role": "assistant",
+        "content": "What device?"
+      }
+    ],
+    "good_answer_should_include": [
+      "acknowledge iphone 13",
+      "give battery tips"
+    ],
+    "must_not_include": [
+      "ask for device model again",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-follow_up-009",
+    "category": "follow_up",
+    "question": "Follow up question 9. It's an iPhone 13.",
+    "expected_intent": "software_bug_update",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "history": [
+      {
+        "role": "user",
+        "content": "My battery is dying"
+      },
+      {
+        "role": "assistant",
+        "content": "What device?"
+      }
+    ],
+    "good_answer_should_include": [
+      "acknowledge iphone 13",
+      "give battery tips"
+    ],
+    "must_not_include": [
+      "ask for device model again",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-follow_up-010",
+    "category": "follow_up",
+    "question": "Follow up question 10. It's an iPhone 13.",
+    "expected_intent": "software_bug_update",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "history": [
+      {
+        "role": "user",
+        "content": "My battery is dying"
+      },
+      {
+        "role": "assistant",
+        "content": "What device?"
+      }
+    ],
+    "good_answer_should_include": [
+      "acknowledge iphone 13",
+      "give battery tips"
+    ],
+    "must_not_include": [
+      "ask for device model again",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-battery-021",
+    "category": "battery",
+    "question": "My iPad Pro battery drains super fast after macOS Sonoma. Please fix!",
+    "expected_intent": "software_bug_update",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "acknowledge battery issue",
+      "offer next steps"
+    ],
+    "must_not_include": [
+      "promise a refund",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-icloud-021",
+    "category": "icloud",
+    "question": "I upgraded my iCloud storage but it still says full. Help!",
+    "expected_intent": "icloud_storage_sync",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "acknowledge icloud issue",
+      "offer next steps"
+    ],
+    "must_not_include": [
+      "promise a refund",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-billing-021",
+    "category": "billing",
+    "question": "i was charged $9.99 by apple but i didn't buy anything!",
+    "expected_intent": "billing_subscription",
+    "expected_action": "ESCALATE_TO_HUMAN",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "acknowledge billing issue",
+      "offer next steps"
+    ],
+    "must_not_include": [
+      "promise a refund",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-account_access-021",
+    "category": "account_access",
+    "question": "My Apple ID is locked for security reasons. How do I unlock it?",
+    "expected_intent": "apple_id_security",
+    "expected_action": "ESCALATE_TO_HUMAN",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "acknowledge account_access issue",
+      "offer next steps"
+    ],
+    "must_not_include": [
+      "promise a refund",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-hardware-021",
+    "category": "hardware",
+    "question": "I dropped my MacBook Air and the screen is cracked. What do I do?",
+    "expected_intent": "hardware_issue",
+    "expected_action": "ESCALATE_TO_HUMAN",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "acknowledge hardware issue",
+      "offer next steps"
+    ],
+    "must_not_include": [
+      "promise a refund",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-unrelated-021",
+    "category": "unrelated",
+    "question": "What time is the Apple event today?",
+    "expected_intent": "general_inquiry_kb",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "acknowledge unrelated issue",
+      "offer next steps"
+    ],
+    "must_not_include": [
+      "promise a refund",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-battery-022",
+    "category": "battery",
+    "question": "Why does my iPhone 15 Pro die at 10% now?",
+    "expected_intent": "software_bug_update",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "acknowledge battery issue",
+      "offer next steps"
+    ],
+    "must_not_include": [
+      "promise a refund",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-icloud-022",
+    "category": "icloud",
+    "question": "Photos aren't syncing from my iPhone 13 to my Mac.",
+    "expected_intent": "icloud_storage_sync",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "acknowledge icloud issue",
+      "offer next steps"
+    ],
+    "must_not_include": [
+      "promise a refund",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-billing-022",
+    "category": "billing",
+    "question": "how do i cancel this random app subscription?",
+    "expected_intent": "billing_subscription",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "acknowledge billing issue",
+      "offer next steps"
+    ],
+    "must_not_include": [
+      "promise a refund",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-account_access-022",
+    "category": "account_access",
+    "question": "i forgot my password and can't get into my account.",
+    "expected_intent": "apple_id_security",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "acknowledge account_access issue",
+      "offer next steps"
+    ],
+    "must_not_include": [
+      "promise a refund",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-hardware-022",
+    "category": "hardware",
+    "question": "the trackpad on my iphone 15 pro stopped clicking.",
+    "expected_intent": "hardware_issue",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "good_answer_should_include": [
+      "acknowledge hardware issue",
+      "offer next steps"
+    ],
+    "must_not_include": [
+      "promise a refund",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-unrelated-022",
+    "category": "unrelated",
+    "question": "Do you sell android phones?",
+    "expected_intent": "general_inquiry_kb",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": false,
+    "good_answer_should_include": [
+      "acknowledge unrelated issue",
+      "offer next steps"
+    ],
+    "must_not_include": [
+      "promise a refund",
+      "ask for password"
+    ]
+  },
+  {
+    "id": "synthetic-follow_up-011",
+    "category": "follow_up",
+    "question": "Yes, I tried restarting it but it didn't help.",
+    "expected_intent": "software_bug_update",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "history": [
+      {
+        "role": "user",
+        "content": "My phone is lagging."
+      },
+      {
+        "role": "assistant",
+        "content": "Have you tried restarting your device?"
+      }
+    ],
+    "good_answer_should_include": [
+      "suggest next troubleshooting step"
+    ],
+    "must_not_include": [
+      "suggest restarting again"
+    ]
+  },
+  {
+    "id": "synthetic-follow_up-012",
+    "category": "follow_up",
+    "question": "Yes, I tried restarting it but it didn't help.",
+    "expected_intent": "software_bug_update",
+    "expected_action": "AUTO_HANDLE",
+    "should_clarify": true,
+    "history": [
+      {
+        "role": "user",
+        "content": "My phone is lagging."
+      },
+      {
+        "role": "assistant",
+        "content": "Have you tried restarting your device?"
+      }
+    ],
+    "good_answer_should_include": [
+      "suggest next troubleshooting step"
+    ],
+    "must_not_include": [
+      "suggest restarting again"
+    ]
   }
 ]
