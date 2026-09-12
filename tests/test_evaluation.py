@@ -9,7 +9,7 @@ class EvaluationCorpusTests(unittest.TestCase):
     def test_answer_quality_corpus_is_valid_and_complete(self):
         path = Path(__file__).resolve().parents[1] / "data" / "evaluation" / "answer_quality.json"
         cases = load_cases(path)
-        self.assertEqual(len(cases), 40)
+        self.assertEqual(len(cases), 184)
         self.assertEqual({case["category"] for case in cases}, {
             "battery", "icloud", "billing", "account_access", "hardware",
             "follow_up", "unrelated",
