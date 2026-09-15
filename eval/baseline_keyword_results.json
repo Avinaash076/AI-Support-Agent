@@ -1,0 +1,1474 @@
+[
+  {
+    "id": "battery-01",
+    "intent_expected": "software_bug_update",
+    "intent_actual": "software_bug_update",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a software_bug_update issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "battery-02",
+    "intent_expected": "hardware_issue",
+    "intent_actual": "software_bug_update",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a software_bug_update issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "battery-03",
+    "intent_expected": "general_inquiry_kb",
+    "intent_actual": "software_bug_update",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a software_bug_update issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "battery-04",
+    "intent_expected": "hardware_issue",
+    "intent_actual": "software_bug_update",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a software_bug_update issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "battery-05",
+    "intent_expected": "software_bug_update",
+    "intent_actual": "software_bug_update",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a software_bug_update issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "battery-06",
+    "intent_expected": "hardware_issue",
+    "intent_actual": "billing_subscription",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "ESCALATE_TO_HUMAN",
+    "reply": "Thank you for reaching out to Apple Support. For security reasons, please contact Apple Support directly at support.apple.com."
+  },
+  {
+    "id": "icloud-01",
+    "intent_expected": "icloud_storage_sync",
+    "intent_actual": "icloud_storage_sync",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a icloud_storage_sync issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "icloud-02",
+    "intent_expected": "icloud_storage_sync",
+    "intent_actual": "icloud_storage_sync",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a icloud_storage_sync issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "icloud-03",
+    "intent_expected": "icloud_storage_sync",
+    "intent_actual": "icloud_storage_sync",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a icloud_storage_sync issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "icloud-04",
+    "intent_expected": "icloud_storage_sync",
+    "intent_actual": "icloud_storage_sync",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a icloud_storage_sync issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "icloud-05",
+    "intent_expected": "icloud_storage_sync",
+    "intent_actual": "icloud_storage_sync",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a icloud_storage_sync issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "icloud-06",
+    "intent_expected": "icloud_storage_sync",
+    "intent_actual": "icloud_storage_sync",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a icloud_storage_sync issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "billing-01",
+    "intent_expected": "billing_subscription",
+    "intent_actual": "billing_subscription",
+    "action_expected": "ESCALATE_TO_HUMAN",
+    "action_actual": "ESCALATE_TO_HUMAN",
+    "reply": "Thank you for reaching out to Apple Support. For security reasons, please contact Apple Support directly at support.apple.com."
+  },
+  {
+    "id": "billing-02",
+    "intent_expected": "billing_subscription",
+    "intent_actual": "billing_subscription",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "ESCALATE_TO_HUMAN",
+    "reply": "Thank you for reaching out to Apple Support. For security reasons, please contact Apple Support directly at support.apple.com."
+  },
+  {
+    "id": "billing-03",
+    "intent_expected": "billing_subscription",
+    "intent_actual": "billing_subscription",
+    "action_expected": "ESCALATE_TO_HUMAN",
+    "action_actual": "ESCALATE_TO_HUMAN",
+    "reply": "Thank you for reaching out to Apple Support. For security reasons, please contact Apple Support directly at support.apple.com."
+  },
+  {
+    "id": "billing-04",
+    "intent_expected": "billing_subscription",
+    "intent_actual": "billing_subscription",
+    "action_expected": "ESCALATE_TO_HUMAN",
+    "action_actual": "ESCALATE_TO_HUMAN",
+    "reply": "Thank you for reaching out to Apple Support. For security reasons, please contact Apple Support directly at support.apple.com."
+  },
+  {
+    "id": "billing-05",
+    "intent_expected": "billing_subscription",
+    "intent_actual": "billing_subscription",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "ESCALATE_TO_HUMAN",
+    "reply": "Thank you for reaching out to Apple Support. For security reasons, please contact Apple Support directly at support.apple.com."
+  },
+  {
+    "id": "billing-06",
+    "intent_expected": "billing_subscription",
+    "intent_actual": "billing_subscription",
+    "action_expected": "ESCALATE_TO_HUMAN",
+    "action_actual": "ESCALATE_TO_HUMAN",
+    "reply": "Thank you for reaching out to Apple Support. For security reasons, please contact Apple Support directly at support.apple.com."
+  },
+  {
+    "id": "access-01",
+    "intent_expected": "apple_id_security",
+    "intent_actual": "apple_id_security",
+    "action_expected": "ESCALATE_TO_HUMAN",
+    "action_actual": "ESCALATE_TO_HUMAN",
+    "reply": "Thank you for reaching out to Apple Support. For security reasons, please contact Apple Support directly at support.apple.com."
+  },
+  {
+    "id": "access-02",
+    "intent_expected": "apple_id_security",
+    "intent_actual": "apple_id_security",
+    "action_expected": "ESCALATE_TO_HUMAN",
+    "action_actual": "ESCALATE_TO_HUMAN",
+    "reply": "Thank you for reaching out to Apple Support. For security reasons, please contact Apple Support directly at support.apple.com."
+  },
+  {
+    "id": "access-03",
+    "intent_expected": "apple_id_security",
+    "intent_actual": "apple_id_security",
+    "action_expected": "ESCALATE_TO_HUMAN",
+    "action_actual": "ESCALATE_TO_HUMAN",
+    "reply": "Thank you for reaching out to Apple Support. For security reasons, please contact Apple Support directly at support.apple.com."
+  },
+  {
+    "id": "access-04",
+    "intent_expected": "apple_id_security",
+    "intent_actual": "apple_id_security",
+    "action_expected": "ESCALATE_TO_HUMAN",
+    "action_actual": "ESCALATE_TO_HUMAN",
+    "reply": "Thank you for reaching out to Apple Support. For security reasons, please contact Apple Support directly at support.apple.com."
+  },
+  {
+    "id": "access-05",
+    "intent_expected": "apple_id_security",
+    "intent_actual": "hardware_issue",
+    "action_expected": "ESCALATE_TO_HUMAN",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a hardware_issue issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "access-06",
+    "intent_expected": "apple_id_security",
+    "intent_actual": "general_inquiry_kb",
+    "action_expected": "ESCALATE_TO_HUMAN",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a general_inquiry_kb issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "hardware-01",
+    "intent_expected": "hardware_issue",
+    "intent_actual": "hardware_issue",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a hardware_issue issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "hardware-02",
+    "intent_expected": "hardware_issue",
+    "intent_actual": "hardware_issue",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a hardware_issue issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "hardware-03",
+    "intent_expected": "hardware_issue",
+    "intent_actual": "billing_subscription",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "ESCALATE_TO_HUMAN",
+    "reply": "Thank you for reaching out to Apple Support. For security reasons, please contact Apple Support directly at support.apple.com."
+  },
+  {
+    "id": "hardware-04",
+    "intent_expected": "hardware_issue",
+    "intent_actual": "general_inquiry_kb",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a general_inquiry_kb issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "hardware-05",
+    "intent_expected": "hardware_issue",
+    "intent_actual": "hardware_issue",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a hardware_issue issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "hardware-06",
+    "intent_expected": "hardware_issue",
+    "intent_actual": "hardware_issue",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a hardware_issue issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "followup-01",
+    "intent_expected": "software_bug_update",
+    "intent_actual": "hardware_issue",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a hardware_issue issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "followup-02",
+    "intent_expected": "icloud_storage_sync",
+    "intent_actual": "icloud_storage_sync",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a icloud_storage_sync issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "followup-03",
+    "intent_expected": "billing_subscription",
+    "intent_actual": "billing_subscription",
+    "action_expected": "ESCALATE_TO_HUMAN",
+    "action_actual": "ESCALATE_TO_HUMAN",
+    "reply": "Thank you for reaching out to Apple Support. For security reasons, please contact Apple Support directly at support.apple.com."
+  },
+  {
+    "id": "followup-04",
+    "intent_expected": "hardware_issue",
+    "intent_actual": "general_inquiry_kb",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a general_inquiry_kb issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "unrelated-01",
+    "intent_expected": "general_inquiry_kb",
+    "intent_actual": "general_inquiry_kb",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a general_inquiry_kb issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "unrelated-02",
+    "intent_expected": "general_inquiry_kb",
+    "intent_actual": "general_inquiry_kb",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a general_inquiry_kb issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "unrelated-03",
+    "intent_expected": "general_inquiry_kb",
+    "intent_actual": "general_inquiry_kb",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a general_inquiry_kb issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "unrelated-04",
+    "intent_expected": "general_inquiry_kb",
+    "intent_actual": "general_inquiry_kb",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a general_inquiry_kb issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "unrelated-05",
+    "intent_expected": "general_inquiry_kb",
+    "intent_actual": "general_inquiry_kb",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a general_inquiry_kb issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "unrelated-06",
+    "intent_expected": "general_inquiry_kb",
+    "intent_actual": "apple_id_security",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "ESCALATE_TO_HUMAN",
+    "reply": "Thank you for reaching out to Apple Support. For security reasons, please contact Apple Support directly at support.apple.com."
+  },
+  {
+    "id": "synthetic-battery-001",
+    "intent_expected": "software_bug_update",
+    "intent_actual": "software_bug_update",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a software_bug_update issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-battery-002",
+    "intent_expected": "software_bug_update",
+    "intent_actual": "software_bug_update",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a software_bug_update issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-battery-003",
+    "intent_expected": "software_bug_update",
+    "intent_actual": "software_bug_update",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a software_bug_update issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-battery-004",
+    "intent_expected": "software_bug_update",
+    "intent_actual": "software_bug_update",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a software_bug_update issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-battery-005",
+    "intent_expected": "software_bug_update",
+    "intent_actual": "software_bug_update",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a software_bug_update issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-battery-006",
+    "intent_expected": "software_bug_update",
+    "intent_actual": "software_bug_update",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a software_bug_update issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-battery-007",
+    "intent_expected": "software_bug_update",
+    "intent_actual": "software_bug_update",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a software_bug_update issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-battery-008",
+    "intent_expected": "software_bug_update",
+    "intent_actual": "software_bug_update",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a software_bug_update issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-battery-009",
+    "intent_expected": "software_bug_update",
+    "intent_actual": "software_bug_update",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a software_bug_update issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-battery-010",
+    "intent_expected": "software_bug_update",
+    "intent_actual": "software_bug_update",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a software_bug_update issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-battery-011",
+    "intent_expected": "software_bug_update",
+    "intent_actual": "software_bug_update",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a software_bug_update issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-battery-012",
+    "intent_expected": "software_bug_update",
+    "intent_actual": "software_bug_update",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a software_bug_update issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-battery-013",
+    "intent_expected": "software_bug_update",
+    "intent_actual": "software_bug_update",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a software_bug_update issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-battery-014",
+    "intent_expected": "software_bug_update",
+    "intent_actual": "software_bug_update",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a software_bug_update issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-battery-015",
+    "intent_expected": "software_bug_update",
+    "intent_actual": "software_bug_update",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a software_bug_update issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-battery-016",
+    "intent_expected": "software_bug_update",
+    "intent_actual": "software_bug_update",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a software_bug_update issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-battery-017",
+    "intent_expected": "software_bug_update",
+    "intent_actual": "software_bug_update",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a software_bug_update issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-battery-018",
+    "intent_expected": "software_bug_update",
+    "intent_actual": "software_bug_update",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a software_bug_update issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-battery-019",
+    "intent_expected": "software_bug_update",
+    "intent_actual": "software_bug_update",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a software_bug_update issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-battery-020",
+    "intent_expected": "software_bug_update",
+    "intent_actual": "software_bug_update",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a software_bug_update issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-icloud-001",
+    "intent_expected": "icloud_storage_sync",
+    "intent_actual": "icloud_storage_sync",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a icloud_storage_sync issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-icloud-002",
+    "intent_expected": "icloud_storage_sync",
+    "intent_actual": "icloud_storage_sync",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a icloud_storage_sync issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-icloud-003",
+    "intent_expected": "icloud_storage_sync",
+    "intent_actual": "icloud_storage_sync",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a icloud_storage_sync issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-icloud-004",
+    "intent_expected": "icloud_storage_sync",
+    "intent_actual": "icloud_storage_sync",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a icloud_storage_sync issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-icloud-005",
+    "intent_expected": "icloud_storage_sync",
+    "intent_actual": "icloud_storage_sync",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a icloud_storage_sync issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-icloud-006",
+    "intent_expected": "icloud_storage_sync",
+    "intent_actual": "icloud_storage_sync",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a icloud_storage_sync issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-icloud-007",
+    "intent_expected": "icloud_storage_sync",
+    "intent_actual": "icloud_storage_sync",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a icloud_storage_sync issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-icloud-008",
+    "intent_expected": "icloud_storage_sync",
+    "intent_actual": "icloud_storage_sync",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a icloud_storage_sync issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-icloud-009",
+    "intent_expected": "icloud_storage_sync",
+    "intent_actual": "icloud_storage_sync",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a icloud_storage_sync issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-icloud-010",
+    "intent_expected": "icloud_storage_sync",
+    "intent_actual": "icloud_storage_sync",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a icloud_storage_sync issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-icloud-011",
+    "intent_expected": "icloud_storage_sync",
+    "intent_actual": "icloud_storage_sync",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a icloud_storage_sync issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-icloud-012",
+    "intent_expected": "icloud_storage_sync",
+    "intent_actual": "icloud_storage_sync",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a icloud_storage_sync issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-icloud-013",
+    "intent_expected": "icloud_storage_sync",
+    "intent_actual": "icloud_storage_sync",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a icloud_storage_sync issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-icloud-014",
+    "intent_expected": "icloud_storage_sync",
+    "intent_actual": "icloud_storage_sync",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a icloud_storage_sync issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-icloud-015",
+    "intent_expected": "icloud_storage_sync",
+    "intent_actual": "icloud_storage_sync",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a icloud_storage_sync issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-icloud-016",
+    "intent_expected": "icloud_storage_sync",
+    "intent_actual": "icloud_storage_sync",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a icloud_storage_sync issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-icloud-017",
+    "intent_expected": "icloud_storage_sync",
+    "intent_actual": "icloud_storage_sync",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a icloud_storage_sync issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-icloud-018",
+    "intent_expected": "icloud_storage_sync",
+    "intent_actual": "icloud_storage_sync",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a icloud_storage_sync issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-icloud-019",
+    "intent_expected": "icloud_storage_sync",
+    "intent_actual": "icloud_storage_sync",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a icloud_storage_sync issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-icloud-020",
+    "intent_expected": "icloud_storage_sync",
+    "intent_actual": "icloud_storage_sync",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a icloud_storage_sync issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-billing-001",
+    "intent_expected": "billing_subscription",
+    "intent_actual": "billing_subscription",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "ESCALATE_TO_HUMAN",
+    "reply": "Thank you for reaching out to Apple Support. For security reasons, please contact Apple Support directly at support.apple.com."
+  },
+  {
+    "id": "synthetic-billing-002",
+    "intent_expected": "billing_subscription",
+    "intent_actual": "billing_subscription",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "ESCALATE_TO_HUMAN",
+    "reply": "Thank you for reaching out to Apple Support. For security reasons, please contact Apple Support directly at support.apple.com."
+  },
+  {
+    "id": "synthetic-billing-003",
+    "intent_expected": "billing_subscription",
+    "intent_actual": "billing_subscription",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "ESCALATE_TO_HUMAN",
+    "reply": "Thank you for reaching out to Apple Support. For security reasons, please contact Apple Support directly at support.apple.com."
+  },
+  {
+    "id": "synthetic-billing-004",
+    "intent_expected": "billing_subscription",
+    "intent_actual": "billing_subscription",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "ESCALATE_TO_HUMAN",
+    "reply": "Thank you for reaching out to Apple Support. For security reasons, please contact Apple Support directly at support.apple.com."
+  },
+  {
+    "id": "synthetic-billing-005",
+    "intent_expected": "billing_subscription",
+    "intent_actual": "billing_subscription",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "ESCALATE_TO_HUMAN",
+    "reply": "Thank you for reaching out to Apple Support. For security reasons, please contact Apple Support directly at support.apple.com."
+  },
+  {
+    "id": "synthetic-billing-006",
+    "intent_expected": "billing_subscription",
+    "intent_actual": "billing_subscription",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "ESCALATE_TO_HUMAN",
+    "reply": "Thank you for reaching out to Apple Support. For security reasons, please contact Apple Support directly at support.apple.com."
+  },
+  {
+    "id": "synthetic-billing-007",
+    "intent_expected": "billing_subscription",
+    "intent_actual": "billing_subscription",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "ESCALATE_TO_HUMAN",
+    "reply": "Thank you for reaching out to Apple Support. For security reasons, please contact Apple Support directly at support.apple.com."
+  },
+  {
+    "id": "synthetic-billing-008",
+    "intent_expected": "billing_subscription",
+    "intent_actual": "billing_subscription",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "ESCALATE_TO_HUMAN",
+    "reply": "Thank you for reaching out to Apple Support. For security reasons, please contact Apple Support directly at support.apple.com."
+  },
+  {
+    "id": "synthetic-billing-009",
+    "intent_expected": "billing_subscription",
+    "intent_actual": "billing_subscription",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "ESCALATE_TO_HUMAN",
+    "reply": "Thank you for reaching out to Apple Support. For security reasons, please contact Apple Support directly at support.apple.com."
+  },
+  {
+    "id": "synthetic-billing-010",
+    "intent_expected": "billing_subscription",
+    "intent_actual": "billing_subscription",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "ESCALATE_TO_HUMAN",
+    "reply": "Thank you for reaching out to Apple Support. For security reasons, please contact Apple Support directly at support.apple.com."
+  },
+  {
+    "id": "synthetic-billing-011",
+    "intent_expected": "billing_subscription",
+    "intent_actual": "billing_subscription",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "ESCALATE_TO_HUMAN",
+    "reply": "Thank you for reaching out to Apple Support. For security reasons, please contact Apple Support directly at support.apple.com."
+  },
+  {
+    "id": "synthetic-billing-012",
+    "intent_expected": "billing_subscription",
+    "intent_actual": "billing_subscription",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "ESCALATE_TO_HUMAN",
+    "reply": "Thank you for reaching out to Apple Support. For security reasons, please contact Apple Support directly at support.apple.com."
+  },
+  {
+    "id": "synthetic-billing-013",
+    "intent_expected": "billing_subscription",
+    "intent_actual": "billing_subscription",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "ESCALATE_TO_HUMAN",
+    "reply": "Thank you for reaching out to Apple Support. For security reasons, please contact Apple Support directly at support.apple.com."
+  },
+  {
+    "id": "synthetic-billing-014",
+    "intent_expected": "billing_subscription",
+    "intent_actual": "billing_subscription",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "ESCALATE_TO_HUMAN",
+    "reply": "Thank you for reaching out to Apple Support. For security reasons, please contact Apple Support directly at support.apple.com."
+  },
+  {
+    "id": "synthetic-billing-015",
+    "intent_expected": "billing_subscription",
+    "intent_actual": "billing_subscription",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "ESCALATE_TO_HUMAN",
+    "reply": "Thank you for reaching out to Apple Support. For security reasons, please contact Apple Support directly at support.apple.com."
+  },
+  {
+    "id": "synthetic-billing-016",
+    "intent_expected": "billing_subscription",
+    "intent_actual": "billing_subscription",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "ESCALATE_TO_HUMAN",
+    "reply": "Thank you for reaching out to Apple Support. For security reasons, please contact Apple Support directly at support.apple.com."
+  },
+  {
+    "id": "synthetic-billing-017",
+    "intent_expected": "billing_subscription",
+    "intent_actual": "billing_subscription",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "ESCALATE_TO_HUMAN",
+    "reply": "Thank you for reaching out to Apple Support. For security reasons, please contact Apple Support directly at support.apple.com."
+  },
+  {
+    "id": "synthetic-billing-018",
+    "intent_expected": "billing_subscription",
+    "intent_actual": "billing_subscription",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "ESCALATE_TO_HUMAN",
+    "reply": "Thank you for reaching out to Apple Support. For security reasons, please contact Apple Support directly at support.apple.com."
+  },
+  {
+    "id": "synthetic-billing-019",
+    "intent_expected": "billing_subscription",
+    "intent_actual": "billing_subscription",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "ESCALATE_TO_HUMAN",
+    "reply": "Thank you for reaching out to Apple Support. For security reasons, please contact Apple Support directly at support.apple.com."
+  },
+  {
+    "id": "synthetic-billing-020",
+    "intent_expected": "billing_subscription",
+    "intent_actual": "billing_subscription",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "ESCALATE_TO_HUMAN",
+    "reply": "Thank you for reaching out to Apple Support. For security reasons, please contact Apple Support directly at support.apple.com."
+  },
+  {
+    "id": "synthetic-account_access-001",
+    "intent_expected": "apple_id_security",
+    "intent_actual": "apple_id_security",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "ESCALATE_TO_HUMAN",
+    "reply": "Thank you for reaching out to Apple Support. For security reasons, please contact Apple Support directly at support.apple.com."
+  },
+  {
+    "id": "synthetic-account_access-002",
+    "intent_expected": "apple_id_security",
+    "intent_actual": "apple_id_security",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "ESCALATE_TO_HUMAN",
+    "reply": "Thank you for reaching out to Apple Support. For security reasons, please contact Apple Support directly at support.apple.com."
+  },
+  {
+    "id": "synthetic-account_access-003",
+    "intent_expected": "apple_id_security",
+    "intent_actual": "apple_id_security",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "ESCALATE_TO_HUMAN",
+    "reply": "Thank you for reaching out to Apple Support. For security reasons, please contact Apple Support directly at support.apple.com."
+  },
+  {
+    "id": "synthetic-account_access-004",
+    "intent_expected": "apple_id_security",
+    "intent_actual": "apple_id_security",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "ESCALATE_TO_HUMAN",
+    "reply": "Thank you for reaching out to Apple Support. For security reasons, please contact Apple Support directly at support.apple.com."
+  },
+  {
+    "id": "synthetic-account_access-005",
+    "intent_expected": "apple_id_security",
+    "intent_actual": "apple_id_security",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "ESCALATE_TO_HUMAN",
+    "reply": "Thank you for reaching out to Apple Support. For security reasons, please contact Apple Support directly at support.apple.com."
+  },
+  {
+    "id": "synthetic-account_access-006",
+    "intent_expected": "apple_id_security",
+    "intent_actual": "apple_id_security",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "ESCALATE_TO_HUMAN",
+    "reply": "Thank you for reaching out to Apple Support. For security reasons, please contact Apple Support directly at support.apple.com."
+  },
+  {
+    "id": "synthetic-account_access-007",
+    "intent_expected": "apple_id_security",
+    "intent_actual": "apple_id_security",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "ESCALATE_TO_HUMAN",
+    "reply": "Thank you for reaching out to Apple Support. For security reasons, please contact Apple Support directly at support.apple.com."
+  },
+  {
+    "id": "synthetic-account_access-008",
+    "intent_expected": "apple_id_security",
+    "intent_actual": "apple_id_security",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "ESCALATE_TO_HUMAN",
+    "reply": "Thank you for reaching out to Apple Support. For security reasons, please contact Apple Support directly at support.apple.com."
+  },
+  {
+    "id": "synthetic-account_access-009",
+    "intent_expected": "apple_id_security",
+    "intent_actual": "apple_id_security",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "ESCALATE_TO_HUMAN",
+    "reply": "Thank you for reaching out to Apple Support. For security reasons, please contact Apple Support directly at support.apple.com."
+  },
+  {
+    "id": "synthetic-account_access-010",
+    "intent_expected": "apple_id_security",
+    "intent_actual": "apple_id_security",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "ESCALATE_TO_HUMAN",
+    "reply": "Thank you for reaching out to Apple Support. For security reasons, please contact Apple Support directly at support.apple.com."
+  },
+  {
+    "id": "synthetic-account_access-011",
+    "intent_expected": "apple_id_security",
+    "intent_actual": "apple_id_security",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "ESCALATE_TO_HUMAN",
+    "reply": "Thank you for reaching out to Apple Support. For security reasons, please contact Apple Support directly at support.apple.com."
+  },
+  {
+    "id": "synthetic-account_access-012",
+    "intent_expected": "apple_id_security",
+    "intent_actual": "apple_id_security",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "ESCALATE_TO_HUMAN",
+    "reply": "Thank you for reaching out to Apple Support. For security reasons, please contact Apple Support directly at support.apple.com."
+  },
+  {
+    "id": "synthetic-account_access-013",
+    "intent_expected": "apple_id_security",
+    "intent_actual": "apple_id_security",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "ESCALATE_TO_HUMAN",
+    "reply": "Thank you for reaching out to Apple Support. For security reasons, please contact Apple Support directly at support.apple.com."
+  },
+  {
+    "id": "synthetic-account_access-014",
+    "intent_expected": "apple_id_security",
+    "intent_actual": "apple_id_security",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "ESCALATE_TO_HUMAN",
+    "reply": "Thank you for reaching out to Apple Support. For security reasons, please contact Apple Support directly at support.apple.com."
+  },
+  {
+    "id": "synthetic-account_access-015",
+    "intent_expected": "apple_id_security",
+    "intent_actual": "apple_id_security",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "ESCALATE_TO_HUMAN",
+    "reply": "Thank you for reaching out to Apple Support. For security reasons, please contact Apple Support directly at support.apple.com."
+  },
+  {
+    "id": "synthetic-account_access-016",
+    "intent_expected": "apple_id_security",
+    "intent_actual": "apple_id_security",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "ESCALATE_TO_HUMAN",
+    "reply": "Thank you for reaching out to Apple Support. For security reasons, please contact Apple Support directly at support.apple.com."
+  },
+  {
+    "id": "synthetic-account_access-017",
+    "intent_expected": "apple_id_security",
+    "intent_actual": "apple_id_security",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "ESCALATE_TO_HUMAN",
+    "reply": "Thank you for reaching out to Apple Support. For security reasons, please contact Apple Support directly at support.apple.com."
+  },
+  {
+    "id": "synthetic-account_access-018",
+    "intent_expected": "apple_id_security",
+    "intent_actual": "apple_id_security",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "ESCALATE_TO_HUMAN",
+    "reply": "Thank you for reaching out to Apple Support. For security reasons, please contact Apple Support directly at support.apple.com."
+  },
+  {
+    "id": "synthetic-account_access-019",
+    "intent_expected": "apple_id_security",
+    "intent_actual": "apple_id_security",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "ESCALATE_TO_HUMAN",
+    "reply": "Thank you for reaching out to Apple Support. For security reasons, please contact Apple Support directly at support.apple.com."
+  },
+  {
+    "id": "synthetic-account_access-020",
+    "intent_expected": "apple_id_security",
+    "intent_actual": "apple_id_security",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "ESCALATE_TO_HUMAN",
+    "reply": "Thank you for reaching out to Apple Support. For security reasons, please contact Apple Support directly at support.apple.com."
+  },
+  {
+    "id": "synthetic-hardware-001",
+    "intent_expected": "hardware_issue",
+    "intent_actual": "general_inquiry_kb",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a general_inquiry_kb issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-hardware-002",
+    "intent_expected": "hardware_issue",
+    "intent_actual": "general_inquiry_kb",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a general_inquiry_kb issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-hardware-003",
+    "intent_expected": "hardware_issue",
+    "intent_actual": "general_inquiry_kb",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a general_inquiry_kb issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-hardware-004",
+    "intent_expected": "hardware_issue",
+    "intent_actual": "general_inquiry_kb",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a general_inquiry_kb issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-hardware-005",
+    "intent_expected": "hardware_issue",
+    "intent_actual": "general_inquiry_kb",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a general_inquiry_kb issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-hardware-006",
+    "intent_expected": "hardware_issue",
+    "intent_actual": "general_inquiry_kb",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a general_inquiry_kb issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-hardware-007",
+    "intent_expected": "hardware_issue",
+    "intent_actual": "general_inquiry_kb",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a general_inquiry_kb issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-hardware-008",
+    "intent_expected": "hardware_issue",
+    "intent_actual": "general_inquiry_kb",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a general_inquiry_kb issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-hardware-009",
+    "intent_expected": "hardware_issue",
+    "intent_actual": "general_inquiry_kb",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a general_inquiry_kb issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-hardware-010",
+    "intent_expected": "hardware_issue",
+    "intent_actual": "general_inquiry_kb",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a general_inquiry_kb issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-hardware-011",
+    "intent_expected": "hardware_issue",
+    "intent_actual": "general_inquiry_kb",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a general_inquiry_kb issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-hardware-012",
+    "intent_expected": "hardware_issue",
+    "intent_actual": "general_inquiry_kb",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a general_inquiry_kb issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-hardware-013",
+    "intent_expected": "hardware_issue",
+    "intent_actual": "general_inquiry_kb",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a general_inquiry_kb issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-hardware-014",
+    "intent_expected": "hardware_issue",
+    "intent_actual": "general_inquiry_kb",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a general_inquiry_kb issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-hardware-015",
+    "intent_expected": "hardware_issue",
+    "intent_actual": "general_inquiry_kb",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a general_inquiry_kb issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-hardware-016",
+    "intent_expected": "hardware_issue",
+    "intent_actual": "general_inquiry_kb",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a general_inquiry_kb issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-hardware-017",
+    "intent_expected": "hardware_issue",
+    "intent_actual": "general_inquiry_kb",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a general_inquiry_kb issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-hardware-018",
+    "intent_expected": "hardware_issue",
+    "intent_actual": "general_inquiry_kb",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a general_inquiry_kb issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-hardware-019",
+    "intent_expected": "hardware_issue",
+    "intent_actual": "general_inquiry_kb",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a general_inquiry_kb issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-hardware-020",
+    "intent_expected": "hardware_issue",
+    "intent_actual": "general_inquiry_kb",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a general_inquiry_kb issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-unrelated-001",
+    "intent_expected": "general_inquiry_kb",
+    "intent_actual": "general_inquiry_kb",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a general_inquiry_kb issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-unrelated-002",
+    "intent_expected": "general_inquiry_kb",
+    "intent_actual": "general_inquiry_kb",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a general_inquiry_kb issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-unrelated-003",
+    "intent_expected": "general_inquiry_kb",
+    "intent_actual": "general_inquiry_kb",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a general_inquiry_kb issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-unrelated-004",
+    "intent_expected": "general_inquiry_kb",
+    "intent_actual": "general_inquiry_kb",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a general_inquiry_kb issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-unrelated-005",
+    "intent_expected": "general_inquiry_kb",
+    "intent_actual": "general_inquiry_kb",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a general_inquiry_kb issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-unrelated-006",
+    "intent_expected": "general_inquiry_kb",
+    "intent_actual": "general_inquiry_kb",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a general_inquiry_kb issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-unrelated-007",
+    "intent_expected": "general_inquiry_kb",
+    "intent_actual": "general_inquiry_kb",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a general_inquiry_kb issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-unrelated-008",
+    "intent_expected": "general_inquiry_kb",
+    "intent_actual": "general_inquiry_kb",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a general_inquiry_kb issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-unrelated-009",
+    "intent_expected": "general_inquiry_kb",
+    "intent_actual": "general_inquiry_kb",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a general_inquiry_kb issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-unrelated-010",
+    "intent_expected": "general_inquiry_kb",
+    "intent_actual": "general_inquiry_kb",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a general_inquiry_kb issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-unrelated-011",
+    "intent_expected": "general_inquiry_kb",
+    "intent_actual": "general_inquiry_kb",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a general_inquiry_kb issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-unrelated-012",
+    "intent_expected": "general_inquiry_kb",
+    "intent_actual": "general_inquiry_kb",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a general_inquiry_kb issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-unrelated-013",
+    "intent_expected": "general_inquiry_kb",
+    "intent_actual": "general_inquiry_kb",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a general_inquiry_kb issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-unrelated-014",
+    "intent_expected": "general_inquiry_kb",
+    "intent_actual": "general_inquiry_kb",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a general_inquiry_kb issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-unrelated-015",
+    "intent_expected": "general_inquiry_kb",
+    "intent_actual": "general_inquiry_kb",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a general_inquiry_kb issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-unrelated-016",
+    "intent_expected": "general_inquiry_kb",
+    "intent_actual": "general_inquiry_kb",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a general_inquiry_kb issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-unrelated-017",
+    "intent_expected": "general_inquiry_kb",
+    "intent_actual": "general_inquiry_kb",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a general_inquiry_kb issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-unrelated-018",
+    "intent_expected": "general_inquiry_kb",
+    "intent_actual": "general_inquiry_kb",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a general_inquiry_kb issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-unrelated-019",
+    "intent_expected": "general_inquiry_kb",
+    "intent_actual": "general_inquiry_kb",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a general_inquiry_kb issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-unrelated-020",
+    "intent_expected": "general_inquiry_kb",
+    "intent_actual": "general_inquiry_kb",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a general_inquiry_kb issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-follow_up-001",
+    "intent_expected": "software_bug_update",
+    "intent_actual": "hardware_issue",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a hardware_issue issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-follow_up-002",
+    "intent_expected": "software_bug_update",
+    "intent_actual": "hardware_issue",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a hardware_issue issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-follow_up-003",
+    "intent_expected": "software_bug_update",
+    "intent_actual": "hardware_issue",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a hardware_issue issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-follow_up-004",
+    "intent_expected": "software_bug_update",
+    "intent_actual": "hardware_issue",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a hardware_issue issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-follow_up-005",
+    "intent_expected": "software_bug_update",
+    "intent_actual": "hardware_issue",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a hardware_issue issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-follow_up-006",
+    "intent_expected": "software_bug_update",
+    "intent_actual": "hardware_issue",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a hardware_issue issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-follow_up-007",
+    "intent_expected": "software_bug_update",
+    "intent_actual": "hardware_issue",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a hardware_issue issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-follow_up-008",
+    "intent_expected": "software_bug_update",
+    "intent_actual": "hardware_issue",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a hardware_issue issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-follow_up-009",
+    "intent_expected": "software_bug_update",
+    "intent_actual": "hardware_issue",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a hardware_issue issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-follow_up-010",
+    "intent_expected": "software_bug_update",
+    "intent_actual": "hardware_issue",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a hardware_issue issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-battery-021",
+    "intent_expected": "software_bug_update",
+    "intent_actual": "software_bug_update",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a software_bug_update issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-icloud-021",
+    "intent_expected": "icloud_storage_sync",
+    "intent_actual": "icloud_storage_sync",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a icloud_storage_sync issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-billing-021",
+    "intent_expected": "billing_subscription",
+    "intent_actual": "billing_subscription",
+    "action_expected": "ESCALATE_TO_HUMAN",
+    "action_actual": "ESCALATE_TO_HUMAN",
+    "reply": "Thank you for reaching out to Apple Support. For security reasons, please contact Apple Support directly at support.apple.com."
+  },
+  {
+    "id": "synthetic-account_access-021",
+    "intent_expected": "apple_id_security",
+    "intent_actual": "apple_id_security",
+    "action_expected": "ESCALATE_TO_HUMAN",
+    "action_actual": "ESCALATE_TO_HUMAN",
+    "reply": "Thank you for reaching out to Apple Support. For security reasons, please contact Apple Support directly at support.apple.com."
+  },
+  {
+    "id": "synthetic-hardware-021",
+    "intent_expected": "hardware_issue",
+    "intent_actual": "hardware_issue",
+    "action_expected": "ESCALATE_TO_HUMAN",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a hardware_issue issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-unrelated-021",
+    "intent_expected": "general_inquiry_kb",
+    "intent_actual": "general_inquiry_kb",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a general_inquiry_kb issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-battery-022",
+    "intent_expected": "software_bug_update",
+    "intent_actual": "hardware_issue",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a hardware_issue issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-icloud-022",
+    "intent_expected": "icloud_storage_sync",
+    "intent_actual": "icloud_storage_sync",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a icloud_storage_sync issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-billing-022",
+    "intent_expected": "billing_subscription",
+    "intent_actual": "billing_subscription",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "ESCALATE_TO_HUMAN",
+    "reply": "Thank you for reaching out to Apple Support. For security reasons, please contact Apple Support directly at support.apple.com."
+  },
+  {
+    "id": "synthetic-account_access-022",
+    "intent_expected": "apple_id_security",
+    "intent_actual": "apple_id_security",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "ESCALATE_TO_HUMAN",
+    "reply": "Thank you for reaching out to Apple Support. For security reasons, please contact Apple Support directly at support.apple.com."
+  },
+  {
+    "id": "synthetic-hardware-022",
+    "intent_expected": "hardware_issue",
+    "intent_actual": "hardware_issue",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a hardware_issue issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-unrelated-022",
+    "intent_expected": "general_inquiry_kb",
+    "intent_actual": "general_inquiry_kb",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a general_inquiry_kb issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-follow_up-011",
+    "intent_expected": "software_bug_update",
+    "intent_actual": "general_inquiry_kb",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a general_inquiry_kb issue. Let's see how we can help. Can you provide more details?"
+  },
+  {
+    "id": "synthetic-follow_up-012",
+    "intent_expected": "software_bug_update",
+    "intent_actual": "general_inquiry_kb",
+    "action_expected": "AUTO_HANDLE",
+    "action_actual": "AUTO_HANDLE",
+    "reply": "This looks like a general_inquiry_kb issue. Let's see how we can help. Can you provide more details?"
+  }
+]

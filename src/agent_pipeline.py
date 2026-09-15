@@ -21,7 +21,9 @@ class SupportAgentPipeline:
         self.escalation_eng = EscalationEngine(llm_client=client)
         print("Pipeline initialized successfully!\n")
 
-    def process_query(self, query: str, history=None) -> Dict[str, Any]:
+    def process_query(self, query: str, history=None, no_history=False) -> Dict[str, Any]:
+        if no_history:
+            history = []
         query = query.strip()
         if not query or len(query) > 4000:
             raise ValueError("Enter a question between 1 and 4,000 characters.")
@@ -96,7 +98,7 @@ if __name__ == "__main__":
     if len(sys.argv) > 1:
         query_text = " ".join(sys.argv[1:])
         pipeline = SupportAgentPipeline()
-        res = pipeline.process_query(query_text)
+        res = pipeline.process_query(query_text, no_history="--no-history" in sys.argv)
         print("\n--- Pipeline Result ---")
         print("Query:", res["query"])
         print("Intent:", res["intent"])

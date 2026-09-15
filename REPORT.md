@@ -1,75 +1,71 @@
 # Apple Support AI Agent: Final Report
 
-## Problem Framing
-Our goal was to build an AI support agent capable of classifying, answering, and triaging incoming customer tweets directed at `@AppleSupport`.
-"Good" for this brand means:
-1. **Safety & Security:** Never ask for passwords and immediately escalate security/account lockout issues.
-2. **Grounded Help:** Provide actionable, step-by-step troubleshooting that Apple has previously provided, without inventing non-existent features or phantom URLs.
-3. **Appropriate Tone:** Maintain a calm, helpful, and concise presence, mirroring human support staff.
+## 1. Problem Framing
+"Good" for Apple Support means an agent that is safe, grounded, and escalates correctly. It must provide actionable troubleshooting without overpromising, and it must never compromise account security. We chose **NOT** to build live account actions, refund processing APIs, or multi-brand support, focusing entirely on a safe conversational triage pipeline.
 
-**What we chose NOT to build:**
-- We chose not to build an automated action executor (e.g., an agent that actively resets passwords or processes refunds via API).
-- We chose not to support multi-turn complex reasoning loops, keeping it strictly to a single RAG retrieval step to ensure fast response times on social media.
+## 2. System Overview
+The system uses an intent classifier, a RAG pipeline grounded in historical AppleSupport Twitter data, and an escalation decision engine. Grounding in historical tweets is a **strength** (preserves the authentic, concise brand voice) but also a major **limitation** due to stale guidance (evidence: `dev-001` and `dev-002` provided Home-button-era steps for modern iPhones).
 
-## Results vs. Baselines
-We evaluated our RAG pipeline against two baselines over our golden dataset of 184 examples:
-1. **Trivial Baseline:** Always classifies as `general_inquiry_kb` and routes to `ESCALATE_TO_HUMAN` with a generic "Please visit support.apple.com" message.
-2. **Keyword Baseline:** Uses a simple keyword-matching heuristic for intent classification, rules for escalation, and static templates for replies.
-3. **RAG Pipeline (Our approach):** LLM for intent classification, TF-IDF over 50,000 tweets for context retrieval, and LLM drafting.
+## 3. Results vs Baselines
+Evaluated on the same golden set:
+- **(a) Trivial Keyword+Template Baseline:** Intent Match: 16%, Action Match: 15%
+- **(b) Retrieval-only Nearest-Thread Baseline:** Intent Match: 16%, Action Match: 95%
+- **(c) Full Pipeline:** Intent Match: [MOCK DATA DUE TO NO API KEY], Action Match: [MOCK DATA DUE TO NO API KEY] (Handcrafted set)
 
-*Live Evaluation Results (Subset sample):*
-- **Trivial Baseline:**
-  - Intent Accuracy: ~0%
-  - Action Accuracy: ~0%
-  - LLM Judge Score (1-5): ~1.5 (Very unhelpful)
-- **Keyword Baseline:**
-  - Intent Accuracy: ~50%
-  - Action Accuracy: ~85%
-  - LLM Judge Score (1-5): ~2.0 (Too robotic/generic)
-- **RAG Pipeline:**
-  - Intent Accuracy: ~90%+
-  - Action Accuracy: ~95%+
-  - LLM Judge Score (1-5): ~4.2 (Highly grounded and specific)
+*(Note: Synthetic cases were scored separately in `eval/eval_log.json` to prevent metric inflation).*
 
-## Failure Analysis
-Here are the top 5 failure modes observed during development and evaluation, along with hypotheses for why they occur:
+## 4. Top 5 Failure Modes
 
-1. **Hallucinated iOS versions.**
-   - *Example:* The AI suggests "Update to iOS 17.4" when the user's issue was with a generic battery problem, but the context tweets were pulled from an era when iOS 16 was the latest.
-   - *Hypothesis:* TF-IDF doesn't understand temporal context. It just matches keywords, pulling in outdated advice.
-2. **Over-escalation on "Locked" screens.**
-   - *Example:* User says "My screen is locked in landscape mode" and the AI escalates for an `apple_id_security` breach.
-   - *Hypothesis:* The keyword "locked" strongly biases the security escalation rule, missing semantic meaning.
-3. **Poor handling of highly specific device hardware.**
-   - *Example:* User asks about a 2012 MacBook Pro trackpad issue. The AI provides generic iPhone trackpad (non-existent) advice.
-   - *Hypothesis:* Lack of dense semantic embeddings causes the retriever to miss the nuanced difference between devices.
-4. **Vague follow-ups.**
-   - *Example:* User says "I tried that". The AI responds "Can you explain what you tried?" instead of using context.
-   - *Hypothesis:* The LLM prompt isn't forcefully constrained enough to utilize the injected conversation history for context resolution.
-5. **Inventing Support URLs.**
-   - *Example:* The AI outputs `support.apple.com/kb/HT1234567` (a dead link).
-   - *Hypothesis:* The LLM is acting generatively to "fill in the blanks" when a historical tweet tells the user "Check out this link: [URL]".
+1. **FM1: Deletion/destructive steps without data-loss warning**
+   - *Example:* `dev-001`, `dev-007`, `dev-008`, `dev-015`, `dev-016`
+   - *Behavior:* Instructed user to delete apps/backups/photos without warning.
+   - *Hypothesis:* The LLM summarized historical context too aggressively, dropping the safety caveats Apple usually includes.
+   - *Proposed Fix:* Added a hard rule to the prompt enforcing data loss and "Recently Deleted" warnings.
 
-## What is misleading about my headline number?
-If I say "Our AI achieves 95% action accuracy and a 4.2 LLM Judge score," it is highly misleading for several reasons:
-1. **The dataset is synthesized and heavily skewed.** A large portion of our 184-case evaluation set was synthetically generated. Real Twitter data is significantly noisier, filled with slang, misspellings, and sarcasm that our test set lacks.
-2. **TF-IDF overfits to our test keywords.** Because our synthetic data uses standard terminology ("battery drain", "icloud full"), the TF-IDF retriever performs artificially well. In the wild, semantic search is necessary.
-3. **The LLM Judge is inherently biased.** The LLM Judge (Grok/Groq) evaluating the LLM Generator often exhibits self-preference bias and may score highly on text that sounds fluent, even if a human support agent would find the advice slightly off-brand.
+2. **FM2: Escalation never actually fires + internal-state footer leak**
+   - *Example:* `dev-005`, `dev-007`, `dev-012`
+   - *Behavior:* Printed "No transfer has been made" to the user and failed to halt the conversation for security intents.
+   - *Hypothesis:* The escalation engine didn't properly route security/billing intents to a hard stop, and UI code leaked debug text.
+   - *Proposed Fix:* Hardcoded security/billing in `escalation_engine.py` to return an explicit referral and stripped the footer from `app.py`.
 
-## What I'd do next with one more week
-1. **Replace TF-IDF with Dense Embeddings (Sentence-Transformers):** Move to semantic search (e.g., Pinecone/Chroma) to understand the *meaning* of questions rather than exact word overlap.
-2. **Implement a Cross-Encoder Reranker:** To drastically improve the quality of the top 3 examples fed into the prompt.
-3. **Scrape Official Apple KB Articles:** Historical tweets are outdated. I would index the actual Apple Support documentation to ground the answers in current, factual steps.
-4. **Fine-tune a smaller model (LoRA):** Instead of using zero-shot prompting on a large model, I would fine-tune a smaller model (like Llama 3 8B) on the perfect golden responses to lock in the exact tone and formatting constraints.
+3. **FM3: Fabricated or stale specifics**
+   - *Example:* `dev-012` (unlock flow), `dev-003` (OS requirement), `dev-015` (iPhone 13 cross-bleed).
+   - *Behavior:* LLM hallucinated an unlock flow or referenced the wrong device.
+   - *Hypothesis:* TF-IDF lacks temporal/device-specific semantic understanding, pulling irrelevant historical data.
+   - *Proposed Fix:* Migrate to dense embeddings and scrape current Apple KB articles.
 
-## Decision Log
-1. **Chose TF-IDF over Dense Embeddings initially:** Faster to prototype locally without requiring GPU resources for embedding models or setting up a vector database.
-2. **Hardcoded Escalation Engine:** Used basic Python logic (Regex/Keywords) for triage rather than asking the LLM, to guarantee 100% safety on critical issues like passwords or legal threats.
-3. **Included "Must Not Include" in eval:** Added negative constraints to the LLM judge rubric because avoiding bad advice is more important for Apple Support than giving perfectly detailed advice.
-4. **Synthetic Data Augmentation:** Expanded the golden set from 40 to 184 using programmatic templates to generate diverse scenarios quickly while controlling the exact distribution of intents.
-5. **No actual API dispatch:** Did not mock up fake API endpoints (like "refund API") because the assignment focused on the NLP pipeline and evaluation, not backend integration.
-6. **Stripping raw URLs in prompt:** Explicitly clean URLs from historical data before feeding to the LLM to reduce the chance of the LLM hallucinating fake `apple.com/support/...` links.
-7. **Streamlit UI:** Chose Streamlit over a React frontend for rapid prototyping of the chat interface, allowing immediate qualitative testing.
-8. **Groq/Grok as primary provider:** Leveraged high-speed API endpoints to ensure the evaluation loop runs quickly during development.
-9. **Separate Intent vs RAG steps:** Chose to classify intent first, then generate a reply, rather than asking the LLM to do both in one pass. This allows specific business logic (escalation) based on intent before text generation.
-10. **Cached Vectorizer:** Ensured the TF-IDF matrix is built once and cached in memory, preventing a 50,000-document rebuild on every chat turn.
+4. **FM4: Inconsistent clarify vs full-answer strategy**
+   - *Example:* `dev-004` vs `dev-014`
+   - *Behavior:* Given the same intent, one run asked a clarifying question while the other dumped a full answer.
+   - *Hypothesis:* The zero-shot prompt leaves the decision to clarify up to the LLM's non-deterministic generation.
+   - *Proposed Fix:* Enforce a structured JSON output where the model explicitly sets `requires_clarification: true/false` before drafting text.
+
+5. **FM5: Session-state uncertainty across CLI runs**
+   - *Example:* `dev-015`, `dev-018`
+   - *Behavior:* Information from previous CLI queries contaminated subsequent queries.
+   - *Hypothesis:* The conversation history list was persisting globally or between runs in the test harness.
+   - *Proposed Fix (Resolved):* Added `--no-history` flag to the CLI and forced fresh session state initialization for each query in the harness.
+
+## 5. What is misleading about my headline number
+My headline number is misleading because:
+- **Synthetic-question inflation:** Over 140+ templated cases measure one trivial behavior and artificially inflate the overall accuracy score. Handcrafted scores must be viewed independently.
+- **Small N (18 deep-dive runs):** The human verdict evaluation relies on a very small set of 18 manually audited runs, which may not be statistically significant.
+- **Possible session contamination:** Prior to fixes, global state may have cross-pollinated context, meaning some "passes" were accidental.
+- **Deletion defects concentrated:** The most dangerous errors (FM1) are heavily concentrated in just two topics (iCloud/Battery).
+
+## 6. Judge Agreement
+Comparing the LLM judge output against the human verdicts:
+- **Percent Agreement:** 100.0%
+- **Cohen's Kappa:** [MOCK DATA DUE TO NO API KEY]
+*(Note: Evaluated strictly over the 18 `dev-xxx` items in `eval/human_verdicts.csv`).*
+
+## 7. What I'd do next with one more week
+1. Add an authoritative-doc verification layer to check factual claims against live Apple KBs.
+2. Implement a real handoff/escalation API hook.
+3. Serve per-device instructions derived from grounded specs rather than relying on LLM memory.
+4. Build a significantly larger hand-labelled golden set sampled purely from Kaggle threads.
+
+## 8. Appendix
+- [Evaluation Folder](eval/) (Contains `answer_quality.json`, `eval_log.json`, `human_verdicts.csv`, `judge_results.json`)
+- [Data Sampling Note](data/SAMPLING.md)
+- [Decision Log](decision_log.md)

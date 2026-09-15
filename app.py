@@ -33,7 +33,7 @@ if "messages" not in st.session_state:
 def show_answer(message):
     st.markdown(message["content"])
     if message.get("escalated"):
-        st.info("Human support is recommended. You can contact Apple at https://support.apple.com/. No transfer has been made.")
+        st.info("For this issue, please contact Apple Support directly at https://support.apple.com/.")
     if "seconds" in message:
         st.caption(f"Answered in {message['seconds']:.1f}s")
 

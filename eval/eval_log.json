@@ -1,0 +1,1106 @@
+[
+  {
+    "id": "battery-01",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": false
+  },
+  {
+    "id": "battery-02",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": false
+  },
+  {
+    "id": "battery-03",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": false
+  },
+  {
+    "id": "battery-04",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": false
+  },
+  {
+    "id": "battery-05",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": false
+  },
+  {
+    "id": "battery-06",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": false
+  },
+  {
+    "id": "icloud-01",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": false
+  },
+  {
+    "id": "icloud-02",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": false
+  },
+  {
+    "id": "icloud-03",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": false
+  },
+  {
+    "id": "icloud-04",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": false
+  },
+  {
+    "id": "icloud-05",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": false
+  },
+  {
+    "id": "icloud-06",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": false
+  },
+  {
+    "id": "billing-01",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": false
+  },
+  {
+    "id": "billing-02",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": false
+  },
+  {
+    "id": "billing-03",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": false
+  },
+  {
+    "id": "billing-04",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": false
+  },
+  {
+    "id": "billing-05",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": false
+  },
+  {
+    "id": "billing-06",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": false
+  },
+  {
+    "id": "access-01",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": false
+  },
+  {
+    "id": "access-02",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": false
+  },
+  {
+    "id": "access-03",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": false
+  },
+  {
+    "id": "access-04",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": false
+  },
+  {
+    "id": "access-05",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": false
+  },
+  {
+    "id": "access-06",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": false
+  },
+  {
+    "id": "hardware-01",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": false
+  },
+  {
+    "id": "hardware-02",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": false
+  },
+  {
+    "id": "hardware-03",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": false
+  },
+  {
+    "id": "hardware-04",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": false
+  },
+  {
+    "id": "hardware-05",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": false
+  },
+  {
+    "id": "hardware-06",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": false
+  },
+  {
+    "id": "followup-01",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": false
+  },
+  {
+    "id": "followup-02",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": false
+  },
+  {
+    "id": "followup-03",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": false
+  },
+  {
+    "id": "followup-04",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": false
+  },
+  {
+    "id": "unrelated-01",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": false
+  },
+  {
+    "id": "unrelated-02",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": false
+  },
+  {
+    "id": "unrelated-03",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": false
+  },
+  {
+    "id": "unrelated-04",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": false
+  },
+  {
+    "id": "unrelated-05",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": false
+  },
+  {
+    "id": "unrelated-06",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": false
+  },
+  {
+    "id": "synthetic-battery-001",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-battery-002",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-battery-003",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-battery-004",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-battery-005",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-battery-006",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-battery-007",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-battery-008",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-battery-009",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-battery-010",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-battery-011",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-battery-012",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-battery-013",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-battery-014",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-battery-015",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-battery-016",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-battery-017",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-battery-018",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-battery-019",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-battery-020",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-icloud-001",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-icloud-002",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-icloud-003",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-icloud-004",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-icloud-005",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-icloud-006",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-icloud-007",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-icloud-008",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-icloud-009",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-icloud-010",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-icloud-011",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-icloud-012",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-icloud-013",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-icloud-014",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-icloud-015",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-icloud-016",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-icloud-017",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-icloud-018",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-icloud-019",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-icloud-020",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-billing-001",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-billing-002",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-billing-003",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-billing-004",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-billing-005",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-billing-006",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-billing-007",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-billing-008",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-billing-009",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-billing-010",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-billing-011",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-billing-012",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-billing-013",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-billing-014",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-billing-015",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-billing-016",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-billing-017",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-billing-018",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-billing-019",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-billing-020",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-account_access-001",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-account_access-002",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-account_access-003",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-account_access-004",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-account_access-005",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-account_access-006",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-account_access-007",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-account_access-008",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-account_access-009",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-account_access-010",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-account_access-011",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-account_access-012",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-account_access-013",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-account_access-014",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-account_access-015",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-account_access-016",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-account_access-017",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-account_access-018",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-account_access-019",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-account_access-020",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-hardware-001",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-hardware-002",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-hardware-003",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-hardware-004",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-hardware-005",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-hardware-006",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-hardware-007",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-hardware-008",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-hardware-009",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-hardware-010",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-hardware-011",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-hardware-012",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-hardware-013",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-hardware-014",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-hardware-015",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-hardware-016",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-hardware-017",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-hardware-018",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-hardware-019",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-hardware-020",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-unrelated-001",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-unrelated-002",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-unrelated-003",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-unrelated-004",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-unrelated-005",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-unrelated-006",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-unrelated-007",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-unrelated-008",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-unrelated-009",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-unrelated-010",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-unrelated-011",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-unrelated-012",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-unrelated-013",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-unrelated-014",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-unrelated-015",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-unrelated-016",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-unrelated-017",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-unrelated-018",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-unrelated-019",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-unrelated-020",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-follow_up-001",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-follow_up-002",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-follow_up-003",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-follow_up-004",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-follow_up-005",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-follow_up-006",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-follow_up-007",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-follow_up-008",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-follow_up-009",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-follow_up-010",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-battery-021",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-icloud-021",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-billing-021",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-account_access-021",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-hardware-021",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-unrelated-021",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-battery-022",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-icloud-022",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-billing-022",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-account_access-022",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-hardware-022",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-unrelated-022",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-follow_up-011",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  },
+  {
+    "id": "synthetic-follow_up-012",
+    "intent_match": true,
+    "action_match": true,
+    "is_synthetic": true
+  }
+]
