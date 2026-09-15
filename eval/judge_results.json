@@ -1,0 +1,810 @@
+{
+  "battery-01": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "battery-02": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "battery-03": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "battery-04": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "battery-05": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "battery-06": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "icloud-01": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "icloud-02": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "icloud-03": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "icloud-04": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "icloud-05": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "icloud-06": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "billing-01": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "billing-02": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "billing-03": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "billing-04": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "billing-05": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "billing-06": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "access-01": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "access-02": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "access-03": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "access-04": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "access-05": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "access-06": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "hardware-01": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "hardware-02": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "hardware-03": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "hardware-04": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "hardware-05": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "hardware-06": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "followup-01": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "followup-02": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "followup-03": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "followup-04": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "unrelated-01": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "unrelated-02": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "unrelated-03": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "unrelated-04": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "unrelated-05": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "unrelated-06": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-battery-001": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-battery-002": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-battery-003": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-battery-004": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-battery-005": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-battery-006": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-battery-007": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-battery-008": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-battery-009": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-battery-010": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-battery-011": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-battery-012": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-battery-013": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-battery-014": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-battery-015": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-battery-016": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-battery-017": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-battery-018": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-battery-019": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-battery-020": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-icloud-001": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-icloud-002": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-icloud-003": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-icloud-004": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-icloud-005": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-icloud-006": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-icloud-007": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-icloud-008": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-icloud-009": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-icloud-010": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-icloud-011": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-icloud-012": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-icloud-013": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-icloud-014": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-icloud-015": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-icloud-016": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-icloud-017": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-icloud-018": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-icloud-019": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-icloud-020": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-billing-001": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-billing-002": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-billing-003": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-billing-004": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-billing-005": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-billing-006": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-billing-007": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-billing-008": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-billing-009": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-billing-010": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-billing-011": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-billing-012": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-billing-013": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-billing-014": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-billing-015": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-billing-016": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-billing-017": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-billing-018": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-billing-019": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-billing-020": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-account_access-001": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-account_access-002": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-account_access-003": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-account_access-004": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-account_access-005": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-account_access-006": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-account_access-007": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-account_access-008": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-account_access-009": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-account_access-010": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-account_access-011": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-account_access-012": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-account_access-013": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-account_access-014": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-account_access-015": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-account_access-016": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-account_access-017": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-account_access-018": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-account_access-019": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-account_access-020": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-hardware-001": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-hardware-002": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-hardware-003": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-hardware-004": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-hardware-005": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-hardware-006": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-hardware-007": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-hardware-008": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-hardware-009": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-hardware-010": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-hardware-011": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-hardware-012": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-hardware-013": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-hardware-014": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-hardware-015": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-hardware-016": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-hardware-017": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-hardware-018": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-hardware-019": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-hardware-020": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-unrelated-001": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-unrelated-002": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-unrelated-003": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-unrelated-004": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-unrelated-005": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-unrelated-006": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-unrelated-007": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-unrelated-008": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-unrelated-009": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-unrelated-010": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-unrelated-011": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-unrelated-012": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-unrelated-013": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-unrelated-014": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-unrelated-015": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-unrelated-016": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-unrelated-017": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-unrelated-018": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-unrelated-019": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-unrelated-020": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-follow_up-001": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-follow_up-002": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-follow_up-003": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-follow_up-004": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-follow_up-005": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-follow_up-006": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-follow_up-007": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-follow_up-008": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-follow_up-009": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-follow_up-010": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-battery-021": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-icloud-021": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-billing-021": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-account_access-021": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-hardware-021": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-unrelated-021": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-battery-022": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-icloud-022": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-billing-022": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-account_access-022": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-hardware-022": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-unrelated-022": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-follow_up-011": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "synthetic-follow_up-012": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "dev-001": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "dev-002": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "dev-003": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "dev-004": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "dev-005": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "dev-006": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "dev-007": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "dev-008": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "dev-009": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "dev-010": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "dev-011": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "dev-012": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "dev-013": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "dev-014": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  },
+  "dev-015": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "dev-016": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "dev-017": {
+    "verdict": "fail",
+    "reasoning": "Mock judge reasoning."
+  },
+  "dev-018": {
+    "verdict": "pass",
+    "reasoning": "Mock judge reasoning."
+  }
+}
